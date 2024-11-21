@@ -133,135 +133,168 @@ const Footer = () => {
         </div>
 
         {/* Footer Links */}
-        <div className="max-w-7xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-4 gap-8 px-4">
-          <div>
-            <div className="flex items-center mb-4">
+        <div className="max-w-7xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-4 gap-8 px-6">
+          {/* Logo & Contact Info Section */}
+          <div className="flex flex-col items-start space-y-4">
+            <div className="flex items-center space-x-4">
               <Image
                 src="/images/pages/whitedignity.png"
-                alt="alt"
-                width={50}
-                height={50}
+                alt="Dignity Medical Training Logo"
+                width={120} // Increased logo size
+                height={120} // Increased logo size
                 className="mr-2"
               />
-              <h3 className="text-xl font-bold">
+              <h3 className="text-3xl font-bold text-white">
                 Dignity Medical Training Institute
               </h3>
             </div>
-            <p className="mb-4">
+            <p className="text-lg text-gray-400 mb-4">
               Dignity Medical Training Institute is the leading certification
               and training company in the USA.
             </p>
-            <div className="space-y-2">
-              <div className="flex items-center">
-                <FaEnvelope className="mr-2" />
+            <div className="space-y-3">
+              <div className="flex items-center text-gray-300">
+                <FaEnvelope className="mr-3" size={20} />
                 <a
                   href="mailto:contact@dignitymedicaltraining.com"
-                  className="hover:underline"
+                  className="hover:text-white transition-colors"
                 >
                   contact@dignitymedicaltraining.com
                 </a>
               </div>
-              <div className="flex items-center">
-                <FaPhoneAlt className="mr-2" />
-                <a href="tel:+1(888)-404-6348" className="hover:underline">
+              <div className="flex items-center text-gray-300">
+                <FaPhoneAlt className="mr-3" size={20} />
+                <a
+                  href="tel:+1(888)-404-6348"
+                  className="hover:text-white transition-colors"
+                >
                   +1(888)-404-6348
                 </a>
               </div>
-              <div className="flex items-center">
-                <FaPhoneAlt className="mr-2" />
-                <a href="tel:+1 (480)-351-2333" className="hover:underline">
+              <div className="flex items-center text-gray-300">
+                <FaPhoneAlt className="mr-3" size={20} />
+                <a
+                  href="tel:+1(480)-351-2333"
+                  className="hover:text-white transition-colors"
+                >
                   +1 (480)-351-2333
                 </a>
               </div>
-              <div className="flex items-center">
-                <FaMapMarkerAlt className="mr-2" />
+              <div className="flex items-center text-gray-300">
+                <FaMapMarkerAlt className="mr-3" size={20} />
                 <p>45720 W Tucker Rd, Maricopa, AZ 85139</p>
               </div>
             </div>
           </div>
 
+          {/* Courses Section */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Courses</h4>
-            <ul className="space-y-2">
+            <h4 className="text-xl font-semibold text-white mb-4">Courses</h4>
+            <ul className="space-y-3 text-gray-400">
               <li>
-                <a href="#allcourse" className="hover:underline">
+                <a
+                  href="#allcourse"
+                  className="hover:text-white transition-colors"
+                >
                   All Courses
                 </a>
               </li>
               <li>
-                <a href="#online" className="hover:underline">
+                <a
+                  href="#online"
+                  className="hover:text-white transition-colors"
+                >
                   Online - Self Paced
                 </a>
               </li>
               <li>
-                <a href="#online" className="hover:underline">
+                <a
+                  href="#classroom"
+                  className="hover:text-white transition-colors"
+                >
                   Classroom Courses
                 </a>
               </li>
               <li>
-                <a href="#online" className="hover:underline">
+                <a href="#zoom" className="hover:text-white transition-colors">
                   Zoom Classes
                 </a>
               </li>
             </ul>
           </div>
 
+          {/* About Section */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">About</h4>
-            <ul className="space-y-2">
+            <h4 className="text-xl font-semibold text-white mb-4">About</h4>
+            <ul className="space-y-3 text-gray-400">
               <li>
-                <a href="#aboutus" className="hover:underline">
+                <a
+                  href="#aboutus"
+                  className="hover:text-white transition-colors"
+                >
                   About Us
                 </a>
               </li>
               <li>
-                <a href="#aboutus" className="hover:underline">
+                <a
+                  href="#leadership"
+                  className="hover:text-white transition-colors"
+                >
                   Leadership
                 </a>
               </li>
               <li>
-                <a href="#Instructors" className="hover:underline">
+                <a
+                  href="#instructors"
+                  className="hover:text-white transition-colors"
+                >
                   Instructors
                 </a>
               </li>
               <li>
-                <a href="#testimonials" className="hover:underline">
+                <a
+                  href="#testimonials"
+                  className="hover:text-white transition-colors"
+                >
                   Testimonials
                 </a>
               </li>
               <li>
-                <a href="/faq" className="hover:underline">
+                <a href="/faq" className="hover:text-white transition-colors">
                   FAQ
                 </a>
               </li>
               <li>
-                <a href="/privacypolicy" className="hover:underline">
+                <a
+                  href="/privacypolicy"
+                  className="hover:text-white transition-colors"
+                >
                   Privacy Policy
                 </a>
               </li>
               <li>
-                <a href="/termsandcondition" className="hover:underline">
+                <a
+                  href="/termsandcondition"
+                  className="hover:text-white transition-colors"
+                >
                   Terms of Service
                 </a>
               </li>
-              {/* <li><a href="#refund" className="hover:underline">Refund Policy</a></li> */}
             </ul>
           </div>
 
+          {/* Location Section */}
           <div>
-            <h4 className="text-lg font-semibold mb-4">Location</h4>
-            <ul className="space-y-2">
+            <h4 className="text-xl font-semibold text-white mb-4">Location</h4>
+            <ul className="space-y-3 text-gray-400">
               <li>
-                <a href="#location" className="hover:underline">
+                <a
+                  href="#location"
+                  className="hover:text-white transition-colors"
+                >
                   Arizona
                 </a>
               </li>
-              {/* <li><a href="#" className="hover:underline">Central Phoenix Training Center</a></li>
-              <li><a href="#" className="hover:underline">Chandler Training Center</a></li>
-              <li><a href="#" className="hover:underline">Goodyear Training Center</a></li>
-              <li><a href="#" className="hover:underline">Offsite</a></li>
-              <li><a href="#" className="hover:underline">Show Low Training Center</a></li>
-              <li><a href="#" className="hover:underline">Tucson Training Center</a></li> */}
             </ul>
           </div>
         </div>

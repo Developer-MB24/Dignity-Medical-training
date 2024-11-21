@@ -215,7 +215,7 @@ const Header = ({ token }) => {
                     href="#online"
                     className="block px-4 py-2 hover:bg-primarygold hover:text-white rounded"
                   >
-                    Online Self-Placed
+                    Online Self-Paced
                   </a>
                   <a
                     href="#online"
@@ -224,7 +224,7 @@ const Header = ({ token }) => {
                     Zoom Classes
                   </a>
                   <a
-                    href="#online"
+                    href="/classroom-courses"
                     className="block px-4 py-2 hover:bg-primarygold hover:text-white rounded"
                   >
                     Classroom Courses

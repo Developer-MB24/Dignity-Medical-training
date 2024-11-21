@@ -29,81 +29,119 @@ const Page = () => {
     } catch (error) {
       console.error("Error sending email:", error);
     }
-    // window.location.href = "/thankyou";
   };
 
   return (
     <>
       <Header />
-      <section className="min-h-fit px-5 sm:px-10 md:px-16 xl:px-20 py-10 md:py-20 xl:py-40 bg-gradient-to-r from-[#f1dd7c29] to-[#eee]">
-        <form
-          className="sm:w-1/3 md:1/2 mx-auto bg-white p-10 rounded-xl shadow-sm"
-          onSubmit={handleSubmit}
-        >
-          <h1 className="text-3xl text-center text-goldlight pb-10 font-bold">
-            Contact Us
-          </h1>
-          <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
-            <div className="grid grid-cols-1 gap-2">
-              <label htmlFor="name" className="text-lg font-medium">
-                Name
-              </label>
-              <input
-                type="text"
-                id="name"
-                name="name"
-                className="border border-gray-300 p-2 rounded-md"
-                onChange={handleChange}
-                required
-              />
+      <section
+        className="min-h-screen flex items-center bg-cover bg-center"
+        style={{
+          backgroundImage: "url('/images/contactus.jpeg')",
+        }}
+      >
+        <div className="w-full h-full bg-black bg-opacity-50 p-10 md:p-20">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-10 text-white">
+            {/* Left Section */}
+            <div className="space-y-8">
+              <h1 className="text-4xl font-bold">Contact Us</h1>
+              <div>
+                <h2 className="text-xl font-semibold">Call Us</h2>
+                <p>1 (234) 567-891, 1 (234) 987-654</p>
+              </div>
+              <div>
+                <h2 className="text-xl font-semibold">Location</h2>
+                <p>121 Rock Street, 21 Avenue, New York, NY 92103-9000</p>
+              </div>
+              <div>
+                <h2 className="text-xl font-semibold">Business Hours</h2>
+                <p>Mon – Fri: 10 am – 8 pm</p>
+                <p>Sat, Sun: Closed</p>
+              </div>
             </div>
-            <div className="grid grid-cols-1 gap-2">
-              <label htmlFor="email" className="text-lg font-medium">
-                Email
-              </label>
-              <input
-                type="email"
-                id="email"
-                name="email"
-                className="border border-gray-300 p-2 rounded-md"
-                onChange={handleChange}
-                required
-              />
+
+            {/* Right Section */}
+            <div className="p-8 rounded-lg shadow-lg text-black">
+              <form onSubmit={handleSubmit} className="space-y-6">
+                <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
+                  <div>
+                    <label
+                      htmlFor="name"
+                      className="block text-sm font-medium text-white"
+                    >
+                      Name
+                    </label>
+                    <input
+                      type="text"
+                      id="name"
+                      name="name"
+                      className="mt-1 block w-full border-b-2 border-white bg-transparent text-white placeholder-gray-500 focus:ring-0 focus:border-white p-2"
+                      onChange={handleChange}
+                      placeholder="Your Full Name"
+                      required
+                    />
+                  </div>
+                  <div>
+                    <label
+                      htmlFor="email"
+                      className="block text-sm font-medium text-white"
+                    >
+                      Email
+                    </label>
+                    <input
+                      type="email"
+                      id="email"
+                      name="email"
+                      className="mt-1 block w-full border-b-2 border-white bg-transparent text-white placeholder-gray-500 focus:ring-0 focus:border-white p-2"
+                      onChange={handleChange}
+                      placeholder="Your Email Address"
+                      required
+                    />
+                  </div>
+                </div>
+                <div>
+                  <label
+                    htmlFor="subject"
+                    className="block text-sm font-medium text-white"
+                  >
+                    Subject
+                  </label>
+                  <input
+                    type="text"
+                    id="subject"
+                    name="subject"
+                    className="mt-1 block w-full border-b-2 border-white bg-transparent text-white placeholder-gray-500 focus:ring-0 focus:border-white p-2"
+                    onChange={handleChange}
+                    placeholder="Subject of Your Message"
+                    required
+                  />
+                </div>
+                <div>
+                  <label
+                    htmlFor="message"
+                    className="block text-sm font-medium text-white"
+                  >
+                    Message
+                  </label>
+                  <textarea
+                    id="message"
+                    name="message"
+                    className="mt-1 block w-full border-b-2 border-white bg-transparent text-white placeholder-gray-500 focus:ring-0 focus:border-white p-2"
+                    onChange={handleChange}
+                    placeholder="Your Message"
+                    required
+                  ></textarea>
+                </div>
+                <button
+                  type="submit"
+                  className="w-full bg-[#FF6F00] text-white py-2 px-4 rounded-lg hover:bg-[#E65100] transition"
+                >
+                  Submit
+                </button>
+              </form>
             </div>
           </div>
-          <div className="grid grid-cols-1 gap-2 mt-4">
-            <label htmlFor="subject" className="text-lg font-medium">
-              Subject
-            </label>
-            <input
-              type="text"
-              id="subject"
-              name="subject"
-              className="border border-gray-300 p-2 rounded-md"
-              onChange={handleChange}
-              required
-            />
-          </div>
-          <div className="grid grid-cols-1 gap-2 mt-4">
-            <label htmlFor="message" className="text-lg font-medium">
-              Message
-            </label>
-            <textarea
-              id="message"
-              name="message"
-              className="border border-gray-300 p-2 rounded-md"
-              onChange={handleChange}
-            />
-          </div>
-          <div className="text-center">
-            <button
-              type="submit"
-              className="text-white bg-primarygold hover:bg-goldlight hover:text-white py-2 px-8 rounded-md mt-5"
-            >
-              Submit
-            </button>
-          </div>
-        </form>
+        </div>
       </section>
       <Footer />
     </>
