@@ -133,169 +133,206 @@ const Footer = () => {
         </div>
 
         {/* Footer Links */}
-        <div className="max-w-7xl mx-auto mt-12 grid grid-cols-1 md:grid-cols-4 gap-8 px-6">
-          {/* Logo & Contact Info Section */}
-          <div className="flex flex-col items-start space-y-4">
-            <div className="flex items-center space-x-4">
+        <div className="bg-gray-800 py-8">
+          <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-6 items-start">
+            {/* Logo & Social Media Section */}
+            <div className="flex flex-col items-center space-y-6">
               <Image
                 src="/images/pages/whitedignity.png"
                 alt="Dignity Medical Training Logo"
-                width={120} // Increased logo size
-                height={120} // Increased logo size
-                className="mr-2"
+                width={150}
+                height={150}
+                className="mb-2"
               />
-              <h3 className="text-3xl font-bold text-white">
-                Dignity Medical Training Institute
-              </h3>
+              <div className="flex space-x-4">
+                <a
+                  href="https://www.facebook.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaFacebook
+                    className="text-gray-300 hover:text-white"
+                    size={24}
+                  />
+                </a>
+                <a
+                  href="https://www.instagram.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaInstagram
+                    className="text-gray-300 hover:text-white"
+                    size={24}
+                  />
+                </a>
+                <a
+                  href="https://www.linkedin.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  <FaLinkedin
+                    className="text-gray-300 hover:text-white"
+                    size={24}
+                  />
+                </a>
+                <a
+                  href="https://www.youtube.com"
+                  target="_blank"
+                  rel="noopener noreferrer"
+                >
+                  {/* <FaYoutube className="text-gray-300 hover:text-white" size={24} /> */}
+                </a>
+              </div>
             </div>
-            <p className="text-lg text-gray-400 mb-4">
-              Dignity Medical Training Institute is the leading certification
-              and training company in the USA.
-            </p>
-            <div className="space-y-3">
-              <div className="flex items-center text-gray-300">
-                <FaEnvelope className="mr-3" size={20} />
-                <a
-                  href="mailto:contact@dignitymedicaltraining.com"
-                  className="hover:text-white transition-colors"
-                >
-                  contact@dignitymedicaltraining.com
-                </a>
-              </div>
-              <div className="flex items-center text-gray-300">
-                <FaPhoneAlt className="mr-3" size={20} />
-                <a
-                  href="tel:+1(888)-404-6348"
-                  className="hover:text-white transition-colors"
-                >
-                  +1(888)-404-6348
-                </a>
-              </div>
-              <div className="flex items-center text-gray-300">
-                <FaPhoneAlt className="mr-3" size={20} />
-                <a
-                  href="tel:+1(480)-351-2333"
-                  className="hover:text-white transition-colors"
-                >
-                  +1 (480)-351-2333
-                </a>
-              </div>
-              <div className="flex items-center text-gray-300">
-                <FaMapMarkerAlt className="mr-3" size={20} />
-                <p>45720 W Tucker Rd, Maricopa, AZ 85139</p>
-              </div>
+
+            {/* Courses Section */}
+            <div>
+              <h4 className="text-xl font-semibold text-white mb-4">Courses</h4>
+              <ul className="space-y-3 text-gray-400">
+                <li>
+                  <a
+                    href="#allcourse"
+                    className="hover:text-white transition-colors"
+                  >
+                    All Courses
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#online"
+                    className="hover:text-white transition-colors"
+                  >
+                    Online - Self Paced
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#classroom"
+                    className="hover:text-white transition-colors"
+                  >
+                    Classroom Courses
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#zoom"
+                    className="hover:text-white transition-colors"
+                  >
+                    Zoom Classes
+                  </a>
+                </li>
+              </ul>
             </div>
-          </div>
 
-          {/* Courses Section */}
-          <div>
-            <h4 className="text-xl font-semibold text-white mb-4">Courses</h4>
-            <ul className="space-y-3 text-gray-400">
-              <li>
-                <a
-                  href="#allcourse"
-                  className="hover:text-white transition-colors"
-                >
-                  All Courses
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#online"
-                  className="hover:text-white transition-colors"
-                >
-                  Online - Self Paced
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#classroom"
-                  className="hover:text-white transition-colors"
-                >
-                  Classroom Courses
-                </a>
-              </li>
-              <li>
-                <a href="#zoom" className="hover:text-white transition-colors">
-                  Zoom Classes
-                </a>
-              </li>
-            </ul>
-          </div>
+            {/* Quick Links Section */}
+            <div>
+              <h4 className="text-xl font-semibold text-white mb-4">
+                Quick Links
+              </h4>
+              <ul className="space-y-3 text-gray-400">
+                <li>
+                  <a
+                    href="#aboutus"
+                    className="hover:text-white transition-colors"
+                  >
+                    About Us
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#leadership"
+                    className="hover:text-white transition-colors"
+                  >
+                    Leadership
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#instructors"
+                    className="hover:text-white transition-colors"
+                  >
+                    Instructors
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="#testimonials"
+                    className="hover:text-white transition-colors"
+                  >
+                    Testimonials
+                  </a>
+                </li>
+                <li>
+                  <a href="/faq" className="hover:text-white transition-colors">
+                    FAQ
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/privacypolicy"
+                    className="hover:text-white transition-colors"
+                  >
+                    Privacy Policy
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="/termsandcondition"
+                    className="hover:text-white transition-colors"
+                  >
+                    Terms of Service
+                  </a>
+                </li>
+              </ul>
+            </div>
 
-          {/* About Section */}
-          <div>
-            <h4 className="text-xl font-semibold text-white mb-4">About</h4>
-            <ul className="space-y-3 text-gray-400">
-              <li>
-                <a
-                  href="#aboutus"
-                  className="hover:text-white transition-colors"
-                >
-                  About Us
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#leadership"
-                  className="hover:text-white transition-colors"
-                >
-                  Leadership
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#instructors"
-                  className="hover:text-white transition-colors"
-                >
-                  Instructors
-                </a>
-              </li>
-              <li>
-                <a
-                  href="#testimonials"
-                  className="hover:text-white transition-colors"
-                >
-                  Testimonials
-                </a>
-              </li>
-              <li>
-                <a href="/faq" className="hover:text-white transition-colors">
-                  FAQ
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/privacypolicy"
-                  className="hover:text-white transition-colors"
-                >
-                  Privacy Policy
-                </a>
-              </li>
-              <li>
-                <a
-                  href="/termsandcondition"
-                  className="hover:text-white transition-colors"
-                >
-                  Terms of Service
-                </a>
-              </li>
-            </ul>
-          </div>
-
-          {/* Location Section */}
-          <div>
-            <h4 className="text-xl font-semibold text-white mb-4">Location</h4>
-            <ul className="space-y-3 text-gray-400">
-              <li>
-                <a
-                  href="#location"
-                  className="hover:text-white transition-colors"
-                >
-                  Arizona
-                </a>
-              </li>
-            </ul>
+            {/* Contact Us Section */}
+            <div>
+              <h4 className="text-xl font-semibold text-white mb-4">
+                Contact Us
+              </h4>
+              <ul className="space-y-3 text-gray-400">
+                <li>
+                  <div className="flex items-center">
+                    <FaEnvelope className="mr-3 text-gray-300" size={20} />
+                    <a
+                      href="mailto:contact@dignitymedicaltraining.com"
+                      className="hover:text-white transition-colors"
+                    >
+                      contact@dignitymedicaltraining.com
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex items-center">
+                    <FaPhoneAlt className="mr-3 text-gray-300" size={20} />
+                    <a
+                      href="tel:+1(888)-404-6348"
+                      className="hover:text-white transition-colors"
+                    >
+                      +1(888)-404-6348
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex items-center">
+                    <FaPhoneAlt className="mr-3 text-gray-300" size={20} />
+                    <a
+                      href="tel:+1(480)-351-2333"
+                      className="hover:text-white transition-colors"
+                    >
+                      +1 (480)-351-2333
+                    </a>
+                  </div>
+                </li>
+                <li>
+                  <div className="flex items-start">
+                    <FaMapMarkerAlt className="mr-3 text-gray-300" size={20} />
+                    <p>45720 W Tucker Rd, Maricopa, AZ 85139</p>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
 

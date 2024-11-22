@@ -7,6 +7,8 @@ import {
 } from "@material-tailwind/react";
 import Link from "next/link";
 import { IoHome } from "react-icons/io5";
+import Header from "@/components/client/common/Header";
+import Footer from "@/components/client/common/Footer";
 
 function Icon({ id, open }) {
   return (
@@ -35,6 +37,8 @@ const FAQPage = () => {
   const handleOpen = (value) => setOpen(open === value ? 0 : value);
 
   return (
+    <>
+    <Header/>
     <div className="bg-blue-50 min-h-screen py-10 px-5 bg-gradient-to-r from-orange-200 to-blue-200">
       {/* Header Section */}
       <div className="max-w-6xl mx-auto bg-white rounded-lg shadow-md p-6">
@@ -149,6 +153,8 @@ const FAQPage = () => {
         </Accordion>
       </div>
     </div>
+    <Footer/>
+    </>
   );
 };
 

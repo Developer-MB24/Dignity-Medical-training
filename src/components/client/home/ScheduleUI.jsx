@@ -8,8 +8,8 @@ const parseDateTime = (dateTime) => {
   const match = datePattern.exec(dateTime);
   if (match) {
     return {
-      start_time: `${match[1]} ${match[3]}`, // Combine the date and start time
-      end_time: `${match[1]} ${match[4]}`,   // Combine the date and end time
+      start_time: `${match[1]} ${match[3]}`,
+      end_time: `${match[1]} ${match[4]}`,
     };
   }
   return { start_time: "", end_time: "" };
@@ -20,7 +20,6 @@ const fetchEnrollmentData = async () => {
     const response = await axios.get(`/apiRoutes/coursedetails`);
     const enrollmentData = response.data.enrollmentData;
 
-    // Parse date_time into start_time and end_time
     return enrollmentData.map((item) => {
       const { start_time, end_time } = parseDateTime(item.date_time);
       return {
@@ -50,10 +49,12 @@ const ScheduleUI = () => {
 
   const daysInMonth = currentDate.daysInMonth();
   const firstDayOfMonth = currentDate.startOf("month").day();
+
   const handlePrevMonth = () => {
     setCurrentDate(currentDate.subtract(1, "month"));
     setSelectedDate(1);
   };
+
   const handleNextMonth = () => {
     setCurrentDate(currentDate.add(1, "month"));
     setSelectedDate(1);
@@ -70,7 +71,6 @@ const ScheduleUI = () => {
     return "hover:bg-gray-200";
   };
 
-  // Filter schedule items for the selected date
   const filteredItems = scheduleItems.filter((item) =>
     dayjs(item.start_time).isSame(
       dayjs(`${currentDate.year()}-${currentDate.month() + 1}-${selectedDate}`),
@@ -79,19 +79,23 @@ const ScheduleUI = () => {
   );
 
   return (
-    <div className="flex bg-white">
+    <div className="flex flex-col md:flex-row bg-white">
       {/* Calendar Section */}
-      <div className="w-1/3 p-4">
+      <div className="md:w-1/3 w-full p-4">
         <div className="text-center">
           {/* Navigation buttons and current month/year display */}
-          <div className="flex justify-between mb-4">
-            <button className="p-2" onClick={handlePrevMonth}>
+          <div className="flex justify-between items-center mb-4">
+            <button
+              className="p-2 bg-gray-100 rounded hover:bg-gray-200"
+              onClick={handlePrevMonth}
+            >
               &lt;
             </button>
-            <h2 className="font-bold text-lg">
-              {currentDate.format("MMMM YYYY")}
-            </h2>
-            <button className="p-2" onClick={handleNextMonth}>
+            <h2 className="font-bold text-lg">{currentDate.format("MMMM YYYY")}</h2>
+            <button
+              className="p-2 bg-gray-100 rounded hover:bg-gray-200"
+              onClick={handleNextMonth}
+            >
               &gt;
             </button>
           </div>
@@ -99,7 +103,7 @@ const ScheduleUI = () => {
           <div className="grid grid-cols-7 gap-2">
             {/* Day labels */}
             {["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"].map((day) => (
-              <div key={day} className="font-semibold">
+              <div key={day} className="font-semibold text-sm md:text-base">
                 {day}
               </div>
             ))}
@@ -111,14 +115,19 @@ const ScheduleUI = () => {
             {Array.from({ length: daysInMonth }, (_, i) => i + 1).map((day) => (
               <div
                 key={day}
-                className={`p-2 cursor-pointer rounded-full ${getDayClass(
+                className={`p-2 text-sm md:text-base cursor-pointer rounded-full ${getDayClass(
                   day
                 )}`}
                 onClick={() => setSelectedDate(day)}
               >
                 <div className="flex flex-col items-center">
                   <span>{day}</span>
-                  <span className="text-red-500">&#8226;</span>
+                  {filteredItems.some((item) =>
+                    dayjs(item.start_time).isSame(
+                      dayjs(`${currentDate.year()}-${currentDate.month() + 1}-${day}`),
+                      "day"
+                    )
+                  ) && <span className="text-red-500">&#8226;</span>}
                 </div>
               </div>
             ))}
@@ -127,7 +136,7 @@ const ScheduleUI = () => {
       </div>
 
       {/* Schedule Section */}
-      <div className="w-2/3 p-4">
+      <div className="md:w-2/3 w-full p-4">
         <h3 className="text-lg font-semibold mb-4">
           {currentDate.format("MMMM")} {selectedDate}, {currentDate.year()}
         </h3>
@@ -160,9 +169,7 @@ const ScheduleUI = () => {
             </div>
           ))
         ) : (
-          <div className="text-red-500">
-            No slots available for this day.
-          </div>
+          <div className="text-red-500">No slots available for this day.</div>
         )}
       </div>
     </div>

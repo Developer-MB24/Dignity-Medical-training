@@ -46,28 +46,28 @@ const Page = () => {
             <div className="space-y-8">
               <h1 className="text-4xl font-bold">Contact Us</h1>
               <div>
+                <h2 className="text-xl font-semibold">Email Us</h2>
+                <p>contact@dignitymedicaltraining.com</p>
+              </div>
+              <div>
                 <h2 className="text-xl font-semibold">Call Us</h2>
-                <p>1 (234) 567-891, 1 (234) 987-654</p>
+                <p>+1 (888) 404-6348</p>
+                <p>+1 (480) 351-2333</p>
               </div>
               <div>
                 <h2 className="text-xl font-semibold">Location</h2>
-                <p>121 Rock Street, 21 Avenue, New York, NY 92103-9000</p>
-              </div>
-              <div>
-                <h2 className="text-xl font-semibold">Business Hours</h2>
-                <p>Mon – Fri: 10 am – 8 pm</p>
-                <p>Sat, Sun: Closed</p>
+                <p>45720 W Tucker Rd, Maricopa, AZ 85139</p>
               </div>
             </div>
 
             {/* Right Section */}
-            <div className="p-8 rounded-lg shadow-lg text-black">
+            <div className="p-8 rounded-lg shadow-lg text-black bg-white">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label
                       htmlFor="name"
-                      className="block text-sm font-medium text-white"
+                      className="block text-sm font-medium text-gray-800"
                     >
                       Name
                     </label>
@@ -75,7 +75,7 @@ const Page = () => {
                       type="text"
                       id="name"
                       name="name"
-                      className="mt-1 block w-full border-b-2 border-white bg-transparent text-white placeholder-gray-500 focus:ring-0 focus:border-white p-2"
+                      className="mt-1 block w-full border-b-2 border-gray-400 bg-transparent text-gray-800 placeholder-gray-500 focus:ring-0 focus:border-gray-800 p-2"
                       onChange={handleChange}
                       placeholder="Your Full Name"
                       required
@@ -84,7 +84,7 @@ const Page = () => {
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-sm font-medium text-white"
+                      className="block text-sm font-medium text-gray-800"
                     >
                       Email
                     </label>
@@ -92,7 +92,7 @@ const Page = () => {
                       type="email"
                       id="email"
                       name="email"
-                      className="mt-1 block w-full border-b-2 border-white bg-transparent text-white placeholder-gray-500 focus:ring-0 focus:border-white p-2"
+                      className="mt-1 block w-full border-b-2 border-gray-400 bg-transparent text-gray-800 placeholder-gray-500 focus:ring-0 focus:border-gray-800 p-2"
                       onChange={handleChange}
                       placeholder="Your Email Address"
                       required
@@ -102,7 +102,7 @@ const Page = () => {
                 <div>
                   <label
                     htmlFor="subject"
-                    className="block text-sm font-medium text-white"
+                    className="block text-sm font-medium text-gray-800"
                   >
                     Subject
                   </label>
@@ -110,7 +110,7 @@ const Page = () => {
                     type="text"
                     id="subject"
                     name="subject"
-                    className="mt-1 block w-full border-b-2 border-white bg-transparent text-white placeholder-gray-500 focus:ring-0 focus:border-white p-2"
+                    className="mt-1 block w-full border-b-2 border-gray-400 bg-transparent text-gray-800 placeholder-gray-500 focus:ring-0 focus:border-gray-800 p-2"
                     onChange={handleChange}
                     placeholder="Subject of Your Message"
                     required
@@ -119,14 +119,14 @@ const Page = () => {
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-sm font-medium text-white"
+                    className="block text-sm font-medium text-gray-800"
                   >
                     Message
                   </label>
                   <textarea
                     id="message"
                     name="message"
-                    className="mt-1 block w-full border-b-2 border-white bg-transparent text-white placeholder-gray-500 focus:ring-0 focus:border-white p-2"
+                    className="mt-1 block w-full border-b-2 border-gray-400 bg-transparent text-gray-800 placeholder-gray-500 focus:ring-0 focus:border-gray-800 p-2"
                     onChange={handleChange}
                     placeholder="Your Message"
                     required

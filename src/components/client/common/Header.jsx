@@ -205,12 +205,12 @@ const Header = ({ token }) => {
             <nav className="hidden md:flex items-center space-x-4 font-semibold text-sm text-nowrap">
               <div className="group relative">
                 <a
-                  href="#allcourse"
+                  href="/all-courses"
                   className="text-black hover:text-goldlight"
                 >
                   ALL COURSES
                 </a>
-                <div className="absolute left-0 p-2 rounded hidden group-hover:block bg-white shadow-lg text-black">
+                {/* <div className="absolute left-0 p-2 rounded hidden group-hover:block bg-white shadow-lg text-black">
                   <a
                     href="#online"
                     className="block px-4 py-2 hover:bg-primarygold hover:text-white rounded"
@@ -229,7 +229,7 @@ const Header = ({ token }) => {
                   >
                     Classroom Courses
                   </a>
-                </div>
+                </div> */}
               </div>
               <div className="group relative">
                 <a href="#" className="text-black hover:text-goldlight">
