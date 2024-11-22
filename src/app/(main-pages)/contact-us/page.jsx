@@ -61,13 +61,13 @@ const Page = () => {
             </div>
 
             {/* Right Section */}
-            <div className="p-8 rounded-lg shadow-lg text-black bg-white">
+            <div className="p-8 rounded-lg shadow-lg text-black ">
               <form onSubmit={handleSubmit} className="space-y-6">
                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-6">
                   <div>
                     <label
                       htmlFor="name"
-                      className="block text-sm font-medium text-gray-800"
+                      className="block text-sm font-medium text-white"
                     >
                       Name
                     </label>
@@ -84,7 +84,7 @@ const Page = () => {
                   <div>
                     <label
                       htmlFor="email"
-                      className="block text-sm font-medium text-gray-800"
+                      className="block text-sm font-medium text-white"
                     >
                       Email
                     </label>
@@ -102,7 +102,7 @@ const Page = () => {
                 <div>
                   <label
                     htmlFor="subject"
-                    className="block text-sm font-medium text-gray-800"
+                    className="block text-sm font-medium text-white"
                   >
                     Subject
                   </label>
@@ -119,7 +119,7 @@ const Page = () => {
                 <div>
                   <label
                     htmlFor="message"
-                    className="block text-sm font-medium text-gray-800"
+                    className="block text-sm font-medium text-white"
                   >
                     Message
                   </label>
