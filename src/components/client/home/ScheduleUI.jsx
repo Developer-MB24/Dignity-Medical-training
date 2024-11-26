@@ -79,9 +79,9 @@ const ScheduleUI = () => {
   );
 
   return (
-    <div className="flex flex-col md:flex-row bg-white">
+    <div className="flex flex-col lg:flex-row items-center justify-center ">
       {/* Calendar Section */}
-      <div className="md:w-1/3 w-full p-4">
+      <div className=" lg:w-2/3 w-full p-4 mx-auto">
         <div className="text-center">
           {/* Navigation buttons and current month/year display */}
           <div className="flex justify-between items-center mb-4">
@@ -136,7 +136,7 @@ const ScheduleUI = () => {
       </div>
 
       {/* Schedule Section */}
-      <div className="md:w-2/3 w-full p-4">
+      <div className=" lg:w-1/3 w-full p-4 mx-auto">
         <h3 className="text-lg font-semibold mb-4">
           {currentDate.format("MMMM")} {selectedDate}, {currentDate.year()}
         </h3>

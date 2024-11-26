@@ -17,8 +17,8 @@ const Banner = () => {
 
   const images = [
     "/images/slider1.jpeg",
-    "/images/slider2.jpeg", 
-    "/images/slider3.jpeg", 
+    "/images/slider2.jpeg",
+    "/images/slider3.jpeg",
   ];
 
   useEffect(() => {
@@ -226,7 +226,7 @@ const Banner = () => {
 
         {/* Greeting Section  */}
 
-        <div
+        {/* <div
           className="relative w-full h-64 bg-cover bg-center"
           style={{ backgroundImage: `url('/images/pages/at2.png')` }}
         >
@@ -237,6 +237,17 @@ const Banner = () => {
               </h1>
             </div>
           </div>
+        </div> */}
+
+        <div className="relative w-full bg-black min-h-screen sm:h-[600px] md:h-[700px] lg:h-[800px]">
+          <video
+            className="absolute inset-0 w-full h-full object-cover"
+            src="/images/greetingvideo.mp4"
+            autoPlay
+            muted
+            loop
+            playsInline
+          ></video>
         </div>
 
         {/* Why Choose Dignity Section */}
@@ -295,16 +306,3 @@ const Banner = () => {
 };
 
 export default Banner;
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -13,10 +13,9 @@ module.exports = {
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
       colors: {
-        "goldlight":"#1D3563 ",
-        "primarygold":"#F27B21"
-
-
+        goldlight: "#1D3563",
+        primarygold: "#F27B21",
+        customBlue: "rgb(29 53 99 / <alpha-value>)", // Added custom blue color
       },
     },
   },

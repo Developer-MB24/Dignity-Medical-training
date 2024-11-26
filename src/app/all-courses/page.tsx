@@ -1,119 +1,279 @@
 "use client";
 import Footer from "@/components/client/common/Footer";
 import Header from "@/components/client/common/Header";
-import React from "react";
+import React, { useState } from "react";
+import { FaSearch } from "react-icons/fa";
+import Link from "next/link";
 
 const PediatricLifeSupport = () => {
-  // Hardcoded course data with different images
+  const [activeTab, setActiveTab] = useState("all");
+
   const courses = [
     {
       id: 1,
-      name: "Abuse and Neglect (1 CEU - 1 Hour Course)",
+      name: "Food Handler's Card",
+      link: "/food-handler",
       instructor: {
-        // name: "Alison Pattison",
         modules: 1,
-        // image: "/images/slider1.jpeg", // Instructor image
       },
-      price: 15.0,
-      image: "/images/slider1.jpeg", // Course image
+      price: 10.0,
+      image: "/assets/courses/course-27.jpg",
     },
     {
       id: 2,
-      name: "Advance Directives (.5 CEU - 30 Min Course)",
+      name: "Pediatric Life Support",
+      link: "/pediatric-life",
       instructor: {
-        // name: "John Smith",
         modules: 1,
-        // image: "/images/instructors/john.jpeg", // Instructor image
       },
-      price: 10.0,
-      image: "/images/slider1.jpeg", // Course image
+      price: 75.0,
+      image: "/assets/courses/course-28.jpg",
     },
     {
       id: 3,
-      name: "All About Autism (1 CEU - 1 Hour Course)",
+      name: "First Aid and CPR & AED",
+      link: "/aid&cpr",
       instructor: {
-        // name: "Emma Brown",
         modules: 1,
-        // image: "/images/instructors/emma.jpeg", // Instructor image
       },
-      price: 20.0,
-      image: "/images/slider1.jpeg", // Course image
+      price: 70.0,
+      image: "/assets/courses/course-29.jpg",
     },
     {
       id: 4,
-      name: "Dementia Care Basics (2 CEU - 2 Hour Course)",
+      name: "Article 9",
+      link: "/article9",
       instructor: {
-        // name: "Michael Lee",
         modules: 2,
-        // image: "/images/instructors/michael.jpeg", // Instructor image
       },
-      price: 25.0,
-      image: "/images/slider1.jpeg", // Course image
+      price: 75.0,
+      image: "/assets/courses/course-40.jpg",
     },
     {
       id: 5,
-      name: "Pediatric Life Support (1 CEU - 1 Hour Course)",
+      name: "Dignity Course",
+      link:"/dignity-course",
       instructor: {
-        // name: "Sophia Green",
         modules: 1,
-        // image: "/images/instructors/sophia.jpeg", // Instructor image
       },
-      price: 18.0,
-      image: "/images/courses/pediatric-life-support.jpeg", // Course image
+      price: 100.0,
+      image: "/assets/courses/course-41.jpg",
     },
     {
       id: 6,
-      name: "CPR and First Aid (1 CEU - 1 Hour Course)",
+      name: "HIPPA",
+      link: "/hippa",
       instructor: {
-        // name: "Olivia Wilson",
         modules: 1,
-        // image: "/images/instructors/olivia.jpeg", // Instructor image
       },
-      price: 15.0,
-      image: "/images/courses/cpr-first-aid.jpeg", // Course image
+      price: 20.0,
+      image: "/assets/courses/course-42.jpg",
+    },
+    {
+      id: 7,
+      name: "Bloodborne Pathogens",
+      link: "/bloodborne-pathogens",
+      instructor: {
+        modules: 2,
+      },
+      price: 20.0,
+      image: "/assets/courses/course-43.jpg",
+    },
+    {
+      id: 8,
+      name: "Dementia Care and Management",
+      link: "/dementia-care",
+      instructor: {
+        modules: 1,
+      },
+      price: 10.0,
+      image: "/assets/courses/course-44.jpg",
+    },
+    {
+      id: 9,
+      name: "Fall Prevention Awareness Training",
+      link: "/prevention-awareness",
+      instructor: {
+        modules: 1,
+      },
+      price: 10.0,
+      image: "/assets/courses/course-45.jpg",
+    },
+    {
+      id: 10,
+      name: "Supporting Individuals Diagnosed with ADHD",
+      link: "/individuals-diagnosed",
+      instructor: {
+        modules: 2,
+      },
+      price: 25.0,
+      image: "/assets/courses/course-46.jpg",
+    },
+    {
+      id: 11,
+      name: "Principles of Positive Behaviour Support",
+      link: "/behaviour-support",
+      instructor: {
+        modules: 1,
+      },
+      price: 20.0,
+      image: "/assets/courses/course-47.jpg",
+    },
+    {
+      id: 12,
+      name: "Preventive Abuse and Neglect Backed",
+      link: "/preventive-abuse",
+      instructor: {
+        modules: 1,
+      },
+      price: 20.0,
+      image: "/assets/courses/course-48.jpg",
+    },
+    {
+      id: 13,
+      name: "Foundational Leadership Development",
+      link: "/leadership-development",
+      instructor: {
+        modules: 1,
+      },
+      price: 20.0,
+      image: "/assets/courses/course-49.jpg",
+    },
+    {
+      id: 14,
+      name: "Becoming an Effective Caregiver",
+      link: "/effective-caregiver",
+      instructor: {
+        modules: 1,
+      },
+      price: 20.0,
+      image: "/assets/courses/course-50.jpg",
+    },
+    {
+      id: 15,
+      name: "End-of-Life Care",
+      link: "/end-of-life-care",
+      instructor: {
+        modules: 1,
+      },
+      price: 50.0,
+      image: "/assets/courses/course-51.jpg",
     },
   ];
+
+  const handleTabClick = (tab) => {
+    setActiveTab(tab);
+  };
 
   return (
     <>
       <Header token={undefined} />
+      <section className="bg-white py-6 border-b border-gray-200">
+        <div className="max-w-7xl mx-auto px-4">
+          <h1 className="text-3xl font-bold text-center mb-6">All Courses</h1>
+
+          {/* Tabs */}
+          <div className="flex justify-center space-x-6 mb-4">
+            <button
+              onClick={() => handleTabClick("all")}
+              className={`flex items-center space-x-2 px-4 py-2 text-sm font-medium ${
+                activeTab === "all"
+                  ? "text-red-600 border-b-2 border-red-600"
+                  : "text-gray-500 hover:text-red-600"
+              }`}
+            >
+              <span className="text-lg">●</span> <span>All</span>
+            </button>
+            <button
+              onClick={() => handleTabClick("online")}
+              className={`flex items-center space-x-2 px-4 py-2 text-sm font-medium ${
+                activeTab === "online"
+                  ? "text-red-600 border-b-2 border-red-600"
+                  : "text-gray-500 hover:text-red-600"
+              }`}
+            >
+              <span className="text-lg">💻</span> <span>Online - Self Paced</span>
+            </button>
+            <button
+              onClick={() => handleTabClick("classroom")}
+              className={`flex items-center space-x-2 px-4 py-2 text-sm font-medium ${
+                activeTab === "classroom"
+                  ? "text-red-600 border-b-2 border-red-600"
+                  : "text-gray-500 hover:text-red-600"
+              }`}
+            >
+              <span className="text-lg">👩‍🏫</span>{" "}
+              <span>Classroom Courses</span>
+            </button>
+            <button
+              onClick={() => handleTabClick("zoom")}
+              className={`flex items-center space-x-2 px-4 py-2 text-sm font-medium ${
+                activeTab === "zoom"
+                  ? "text-red-600 border-b-2 border-red-600"
+                  : "text-gray-500 hover:text-red-600"
+              }`}
+            >
+              <span className="text-lg">📹</span> <span>Zoom Classes</span>
+            </button>
+          </div>
+
+          {/* Search and Filters */}
+          <div className=" flex justify-between items-center border-t border-gray-200 pt-4">
+            {/* Search Bar */}
+            <div className="w-[60%] flex items-center border border-gray-300 rounded-md overflow-hidden">
+              <input
+                type="text"
+                placeholder="Type Here to Find a Specific Course"
+                className="px-4 py-2 w-full focus:outline-none"
+              />
+              <button className="px-4 py-2 bg-red-600 text-white hover:bg-red-500">
+                <FaSearch />
+              </button>
+            </div>
+
+            {/* Filters */}
+            <div className=" w-[40%] flex justify-center items-center space-x-6">
+              <div className="flex items-center space-x-2">
+                <span className="text-gray-500">More Filters:</span>
+                <select
+                  className="border border-gray-300 rounded-md px-3 py-2 focus:outline-none"
+                >
+                  <option>Languages</option>
+                  <option>English</option>
+                  <option>Spanish</option>
+                </select>
+              </div>
+              <div className="flex items-center space-x-2">
+                <select
+                  className="border border-gray-300 rounded-md px-3 py-2 focus:outline-none"
+                >
+                  <option>Locations</option>
+                  <option>Arizona</option>
+                  <option>New York</option>
+                </select>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <section className="mx-8 my-10">
-        {/* Courses Grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
           {courses.map((course) => (
             <div
               key={course.id}
               className="bg-white shadow-lg rounded-lg overflow-hidden border border-gray-200"
             >
-              {/* Course Image */}
               <img
-                src={course.image} // Unique course image
+                src={course.image}
                 alt={course.name}
                 className="w-full h-40 object-cover"
               />
-              {/* Course Details */}
               <div className="p-4 border-b border-gray-200">
-                <h4 className="text-xl font-bold text-gray-800">{course.name}</h4>
+                <h4 className="text-xl font-bold text-gray-800">
+                  <Link href={course.link}>{course.name}</Link>
+                </h4>
               </div>
-              {/* Instructor Details */}
-              <div className="p-4 border-b border-gray-200">
-                <div className="flex items-center gap-4 mb-3">
-                  <img
-                    // src={course.instructor.image} // Unique instructor image
-                    // alt={course.instructor.name}
-                    className="w-12 h-12 rounded-full object-cover"
-                  />
-                  <div>
-                    <p className="text-sm font-semibold text-gray-800">
-                      {/* {course.instructor.name} */}
-                    </p>
-                    <p className="text-sm text-gray-600">
-                      Modules: {course.instructor.modules}
-                    </p>
-                  </div>
-                </div>
-              </div>
-              {/* Pricing and Enroll Button */}
               <div className="p-4 flex justify-between items-center">
                 <div>
                   <p className="text-gray-700 text-sm">Price:</p>
@@ -123,7 +283,7 @@ const PediatricLifeSupport = () => {
                 </div>
                 <button
                   onClick={() => alert(`Enrolled in ${course.name}`)}
-                  className="bg-blue-600 text-white text-sm px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
+                  className="bg-customBlue text-white text-sm px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
                 >
                   ENROLL NOW
                 </button>
@@ -137,4 +297,7 @@ const PediatricLifeSupport = () => {
   );
 };
 
-export default PediatricLifeSupport;
+export default PediatricLifeSupport
+
+
+
