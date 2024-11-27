@@ -34,12 +34,12 @@ const CoursePage = () => {
             <p className="text-sm text-gray-600">
               Created by{" "}
               <span className="text-customBlue font-medium">
-                Ing. Tomas Moravek
+                Master Bazar
               </span>
             </p>
             <p className="text-sm text-gray-600">Last updated 11/2024</p>
             <p className="text-sm text-gray-600 mb-6">
-              English, English [Auto], Indonesian [Auto], +1 more
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, rerum!
             </p>
             
              {/* Premium Section */}
@@ -51,8 +51,7 @@ const CoursePage = () => {
                 <div className="ml-4">
                   <h3 className="font-semibold text-customBlue ">Premium</h3>
                   <p className="text-gray-600 text-sm">
-                    Access this top-rated course, plus 12,000+ more top-rated
-                    courses, with a Udemy plan.{" "}
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Nisi, rerum!.{" "}
                     <a
                       href="#"
                       className="text-customBlue hover:underline font-semibold"
