@@ -17,7 +17,7 @@ const PediatricLifeSupport = () => {
         modules: 1,
       },
       price: 10.0,
-      image: "/assets/courses/course-27.jpg",
+      image: "/coursesimage/course1.png",
     },
     {
       id: 2,
@@ -27,7 +27,7 @@ const PediatricLifeSupport = () => {
         modules: 1,
       },
       price: 75.0,
-      image: "/assets/courses/course-28.jpg",
+      image: "/coursesimage/course2.png",
     },
     {
       id: 3,
@@ -37,7 +37,7 @@ const PediatricLifeSupport = () => {
         modules: 1,
       },
       price: 70.0,
-      image: "/assets/courses/course-29.jpg",
+      image: "/coursesimage/course3.png",
     },
     {
       id: 4,
@@ -47,7 +47,7 @@ const PediatricLifeSupport = () => {
         modules: 2,
       },
       price: 75.0,
-      image: "/assets/courses/course-40.jpg",
+      image: "/coursesimage/course4.png",
     },
     {
       id: 5,
@@ -57,7 +57,7 @@ const PediatricLifeSupport = () => {
         modules: 1,
       },
       price: 100.0,
-      image: "/assets/courses/course-41.jpg",
+      image: "/coursesimage/course5.png",
     },
     {
       id: 6,
@@ -67,7 +67,7 @@ const PediatricLifeSupport = () => {
         modules: 1,
       },
       price: 20.0,
-      image: "/assets/courses/course-42.jpg",
+      image: "/coursesimage/course6.png",
     },
     {
       id: 7,
@@ -77,7 +77,7 @@ const PediatricLifeSupport = () => {
         modules: 2,
       },
       price: 20.0,
-      image: "/assets/courses/course-43.jpg",
+      image: "/coursesimage/course7.png",
     },
     {
       id: 8,
@@ -87,7 +87,7 @@ const PediatricLifeSupport = () => {
         modules: 1,
       },
       price: 10.0,
-      image: "/assets/courses/course-44.jpg",
+      image: "/coursesimage/course8.png",
     },
     {
       id: 9,
@@ -97,7 +97,7 @@ const PediatricLifeSupport = () => {
         modules: 1,
       },
       price: 10.0,
-      image: "/assets/courses/course-45.jpg",
+      image: "/coursesimage/course9.png",
     },
     {
       id: 10,
@@ -107,7 +107,7 @@ const PediatricLifeSupport = () => {
         modules: 2,
       },
       price: 25.0,
-      image: "/assets/courses/course-46.jpg",
+      image: "/coursesimage/course10.png",
     },
     {
       id: 11,
@@ -117,7 +117,7 @@ const PediatricLifeSupport = () => {
         modules: 1,
       },
       price: 20.0,
-      image: "/assets/courses/course-47.jpg",
+      image: "/coursesimage/course11.png",
     },
     {
       id: 12,
@@ -127,7 +127,7 @@ const PediatricLifeSupport = () => {
         modules: 1,
       },
       price: 20.0,
-      image: "/assets/courses/course-48.jpg",
+      image: "/coursesimage/course12.png",
     },
     {
       id: 13,
@@ -137,7 +137,7 @@ const PediatricLifeSupport = () => {
         modules: 1,
       },
       price: 20.0,
-      image: "/assets/courses/course-49.jpg",
+      image: "/coursesimage/course13.png",
     },
     {
       id: 14,
@@ -147,7 +147,7 @@ const PediatricLifeSupport = () => {
         modules: 1,
       },
       price: 20.0,
-      image: "/assets/courses/course-50.jpg",
+      image: "/coursesimage/course14.png",
     },
     {
       id: 15,
@@ -157,7 +157,7 @@ const PediatricLifeSupport = () => {
         modules: 1,
       },
       price: 50.0,
-      image: "/assets/courses/course-51.jpg",
+      image: "/coursesimage/course15.png",
     },
   ];
 
@@ -267,7 +267,7 @@ const PediatricLifeSupport = () => {
               <img
                 src={course.image}
                 alt={course.name}
-                className="w-full h-40 object-cover"
+                className="w-full h-96 object-cover"
               />
               <div className="p-4 border-b border-gray-200">
                 <h4 className="text-xl font-bold text-gray-800">

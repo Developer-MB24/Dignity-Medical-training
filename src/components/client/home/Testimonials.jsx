@@ -7,37 +7,37 @@ const testimonials = [
     quote:
       "I have taken many CPR classes and Dignity Medical Training has the best CPR instructors I have ever had. They made the class interesting with presentations & stories...",
     name: "Alexa",
-    image: "/images/testimonial1.jpg", // Replace with actual image paths
+    image: "/images/slider1.jpeg", // Replace with actual image paths
   },
   {
     quote:
       "I took an AED course from DMT. The class and instructor were both great! They made obtaining certifications stress-free for me...",
     name: "Emma",
-    image: "/images/testimonial2.jpg", // Replace with actual image paths
+    image: "/images/slider1.jpeg", // Replace with actual image paths
   },
   {
     quote:
       "Taking the First Aid course at Dignity Medical Training was very helpful for me. The instructor was super knowledgeable and engaging. I feel they made the content easy to understand and apply in real-life situations.",
     name: "Sarah",
-    image: "/images/testimonial3.jpg", // Replace with actual image paths
+    image: "/images/slider1.jpeg", // Replace with actual image paths
   },
   {
     quote:
       "The training provided was thorough and easy to understand. I feel much more confident in applying what I've learned.",
     name: "Jessica K.",
-    image: "/images/testimonial4.jpg", // Replace with actual image paths
+    image: "/images/slider1.jpeg", // Replace with actual image paths
   },
   {
     quote:
       "The instructor made the course interesting and engaging. I would highly recommend this to others.",
     name: "Mike D.",
-    image: "/images/testimonial5.jpg", // Replace with actual image paths
+    image: "/images/slider1.jpeg", // Replace with actual image paths
   },
   {
     quote:
       "Great experience overall. The course content was relevant and the instructor was very supportive.",
     name: "Emily R.",
-    image: "/images/testimonial6.jpg", // Replace with actual image paths
+    image: "/images/slider1.jpeg", // Replace with actual image paths
   },
 ];
 
@@ -63,7 +63,7 @@ const Testimonials = () => {
         {/* Left Arrow */}
         <button
           onClick={handlePrev}
-          className="absolute left-0 text-white bg-blue-700 hover:bg-blue-600 p-3 rounded-full shadow-md"
+          className="absolute left-0 text-white bg-primarygold p-3 rounded-full shadow-md"
         >
           <MdArrowBackIosNew size={20} />
         </button>
@@ -92,7 +92,7 @@ const Testimonials = () => {
         {/* Right Arrow */}
         <button
           onClick={handleNext}
-          className="absolute right-0 text-white bg-blue-700 hover:bg-blue-600 p-3 rounded-full shadow-md"
+          className="absolute right-0 text-white bg-primarygold  p-3 rounded-full shadow-md"
         >
           <MdArrowForwardIos size={20} />
         </button>

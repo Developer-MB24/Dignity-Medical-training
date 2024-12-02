@@ -232,10 +232,10 @@ const Header = ({ token }) => {
                 </div> */}
               </div>
               <div className="group relative">
-                <a href="#" className="text-black hover:text-goldlight">
-                  ABOUT
+                <a href="/about-us" className="text-black hover:text-goldlight">
+                  ABOUT 
                 </a>
-                <div className="absolute left-0 p-2 rounded hidden group-hover:block bg-white shadow-lg text-black">
+                {/* <div className="absolute left-0 p-2 rounded hidden group-hover:block bg-white shadow-lg text-black">
                   <a
                     href="#aboutus"
                     className="block px-4 py-2 hover:bg-primarygold hover:text-white rounded"
@@ -254,7 +254,7 @@ const Header = ({ token }) => {
                   >
                     Testimonials
                   </a>
-                </div>
+                </div> */}
               </div>
               <div className="group relative">
                 <a href="#" className="text-black hover:text-goldlight">

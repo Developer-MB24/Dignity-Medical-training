@@ -239,60 +239,26 @@ const Banner = () => {
           </div>
         </div> */}
 
-        <div className="relative w-full bg-black min-h-screen sm:h-[600px] md:h-[700px] lg:h-[800px]">
-          <video
-            className="absolute inset-0 w-full h-full object-cover"
-            src="/images/greetingvideo.mp4"
-            autoPlay
-            muted
-            loop
-            playsInline
-          ></video>
+        {/* Greeting Video Section */}
+
+        <div className="flex justify-center items-center bg-white min-h-screen">
+          {/* Video Container */}
+          <div className="relative w-full max-w-5xl bg-black">
+            <video
+              className="w-full h-[500px] rounded-lg shadow-lg"
+              src="/images/greetingvideo.mp4"
+              autoPlay
+              muted
+              loop
+              controls
+              playsInline
+            >
+              Your browser does not support the video tag.
+            </video>
+          </div>
         </div>
 
-        {/* Why Choose Dignity Section */}
-        <section
-          className="bg-gradient-to-r from-primarygold via-goldlight to-primarygold mt-4 text-white py-16 px-6"
-          id="aboutus"
-        >
-          <div className="container mx-auto flex flex-col md:flex-row items-center">
-            {/* Left Image Section */}
-            <div className="md:w-1/2 w-full flex justify-center md:justify-start mb-8 md:mb-0">
-              <div className="relative rounded-lg shadow-lg overflow-hidden w-[90%] md:w-[80%]">
-                <Image
-                  src="/images/pages/at2.png"
-                  alt="Classroom Image"
-                  width={600}
-                  height={100}
-                  className="object-cover w-full h-full"
-                />
-                <div className="absolute inset-0 bg-black bg-opacity-20"></div>
-              </div>
-            </div>
-
-            {/* Right Text Content */}
-            <div className="md:w-1/2 w-full bg-white text-gray-900 p-8 rounded-lg shadow-lg">
-              <h2 className="text-3xl font-extrabold mb-6 text-primarygold">
-                Why Choose Dignity Medical Training?
-              </h2>
-              <p className="mb-6 text-lg leading-relaxed">
-                At DMT, we equip healthcare professionals in Phoenix with not
-                just certifications but hands-on experience and expert training.
-                Guided by seasoned instructors, we prepare you for a successful
-                career in healthcare with practical skills and in-depth
-                knowledge.
-              </p>
-              <p className="text-lg leading-relaxed">
-                Whether you're advancing your career or stepping into the
-                healthcare field, Dignity Medical Training is your trusted
-                partner for growth, empowering you to excel and make a
-                meaningful impact. Dignity Medical Training stands as your
-                trusted partner in professional development, guaranteeing you
-                are prepared for success in healthcare.
-              </p>
-            </div>
-          </div>
-        </section>
+       
 
         <button
           onClick={handleCheckoutVideoOption}
