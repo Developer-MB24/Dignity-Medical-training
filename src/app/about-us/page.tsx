@@ -12,7 +12,7 @@ const AboutUs: React.FC = () => {
           <div className="max-w-7xl mx-auto px-6 gap-8">
             <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center">
               <div className="px-5 lg:w-1/2">
-                <p className="text-yellow-400 text-lg font-semibold mb-2">
+                <p className="text-white text-lg font-semibold mb-2">
                   ABOUT US
                 </p>
                 <h1 className="text-3xl md:text-4xl font-bold mb-6 leading-tight">
@@ -109,19 +109,19 @@ const AboutUs: React.FC = () => {
           <div className="py-12">
             <div className="max-w-7xl mx-auto px-6 grid grid-cols-2 sm:grid-cols-4 gap-8 text-center">
               <div>
-                <h3 className="text-3xl font-bold text-green-800">7K+</h3>
+                <h3 className="text-3xl font-bold text-goldlight">7K+</h3>
                 <p className="text-gray-600 mt-2">Active Students</p>
               </div>
               <div>
-                <h3 className="text-3xl font-bold text-green-800">30+</h3>
+                <h3 className="text-3xl font-bold text-goldlight">30+</h3>
                 <p className="text-gray-600 mt-2">Mentors</p>
               </div>
               <div>
-                <h3 className="text-3xl font-bold text-green-800">1000+</h3>
+                <h3 className="text-3xl font-bold text-goldlight">1000+</h3>
                 <p className="text-gray-600 mt-2">Total Courses</p>
               </div>
               <div>
-                <h3 className="text-3xl font-bold text-green-800">50+</h3>
+                <h3 className="text-3xl font-bold text-goldlight">50+</h3>
                 <p className="text-gray-600 mt-2">Awards</p>
               </div>
             </div>
@@ -156,7 +156,7 @@ const AboutUs: React.FC = () => {
               </div>
 
               {/* Card 2 */}
-              <div className=" p-6 bg-green-900 text-white  shadow">
+              <div className=" p-6 bg-goldlight text-white  shadow">
                 <h3 className="text-lg font-bold mb-4">
                   Blended-Learning Method
                 </h3>
@@ -179,7 +179,7 @@ const AboutUs: React.FC = () => {
               </div>
 
               {/* Card 4 */}
-              <div className="p-6 bg-green-900 text-white  shadow">
+              <div className="p-6 bg-goldlight text-white  shadow">
                 <h3 className="text-lg font-bold mb-4">
                   Rating "Auto-grading"
                 </h3>
@@ -206,7 +206,7 @@ const AboutUs: React.FC = () => {
         <section className="py-16 bg-gray-100">
           <div className="max-w-7xl mx-auto px-6">
             <div className=" flex flex-col pl-5">
-              <p className="text-green-700 text-lg font-semibold  mb-2">
+              <p className="text-goldlight text-lg font-semibold  mb-2">
                 THE TEACHERS
               </p>
               <h2 className="text-3xl font-bold  mb-3">
