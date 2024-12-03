@@ -52,7 +52,7 @@ const Footer = () => {
             <h2 className="text-2xl font-bold mb-4">
               Supercharge Your Skills with Dignity Medical Training Institute!
             </h2>
-            <p className="mb-6">
+            <p className="mb-6 px-2">
               Join our community of caregivers and healthcare professionals
               dedicated to continuous learning. Stay informed about new courses,
               special promotions, and exclusive events tailored to enhance your
