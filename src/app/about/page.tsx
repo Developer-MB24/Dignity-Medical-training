@@ -31,17 +31,28 @@ const AboutUs: React.FC = () => {
         <div className="flex justify-center lg:justify-end mt-[-80px]">
           <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4 p-5 max-w-7xl mx-auto">
             <img
+
               src="/coursesimage/abouthero1.jpeg"
+             
+
               alt="Collaboration"
               className="rounded-lg shadow-md w-full h-auto"
             />
             <img
+
               src="/coursesimage/abouthero2.jpeg"
+
+             
+
               alt="Teamwork"
               className="rounded-lg shadow-md w-full h-auto"
             />
             <img
+
               src="/coursesimage/abouthero3.jpeg"
+
+              
+
               alt="Discussion"
               className="rounded-lg shadow-md w-full h-auto"
             />
@@ -221,9 +232,12 @@ const AboutUs: React.FC = () => {
               {/*  1 */}
               <div className=" text-black p-4 ">
                 <img
+
                   src="/images/TEACHERS1.jpeg"
                   alt="Willy Kedz"
                   className=" w-full h-64 object-cover mb-4"
+
+                  
                 />
                 <h3 className="text-lg font-bold">Willy Kedz</h3>
                 <p className="text-sm">CEO & Founder</p>
@@ -232,9 +246,13 @@ const AboutUs: React.FC = () => {
               {/*  2 */}
               <div className="text-black p-4">
                 <img
+
                   src="/images/TEACHERS2.jpeg"
                   alt="Sophie Moor"
                   className="rounded-lg w-full h-64 object-cover mb-4"
+
+                  
+
                 />
                 <h3 className="text-lg font-bold">Sophie Moor</h3>
                 <p className="text-sm">Chief Product Officer</p>
@@ -243,9 +261,13 @@ const AboutUs: React.FC = () => {
               {/*  3 */}
               <div className="text-black p-4">
                 <img
+
                   src="/images/TEACHERS3.jpeg"
                   alt="Natael Mors"
                   className="rounded-lg w-full h-64 object-cover mb-4"
+
+                 
+
                 />
                 <h3 className="text-lg font-bold">Natael Mors</h3>
                 <p className="text-sm">Design Manager</p>
@@ -254,9 +276,13 @@ const AboutUs: React.FC = () => {
               {/*  4 */}
               <div className="text-black p-4">
                 <img
+
                   src="/images/TEACHERS4.jpeg"
                   alt="Aishy Kaspol"
                   className="rounded-lg w-full h-64 object-cover mb-4"
+
+                  
+
                 />
                 <h3 className="text-lg font-bold">Aishy Kaspol</h3>
                 <p className="text-sm">Marketing Specialist</p>
@@ -265,9 +291,13 @@ const AboutUs: React.FC = () => {
               {/*  5 */}
               <div className="text-black p-4">
                 <img
+
                   src="/images/TEACHERS5.jpeg"
                   alt="Yolanda Tamara"
                   className="rounded-lg w-full h-64 object-cover mb-4"
+
+                  
+
                 />
                 <h3 className="text-lg font-bold">Yolanda Tamara</h3>
                 <p className="text-sm">Senior Android Developer</p>
@@ -276,9 +306,13 @@ const AboutUs: React.FC = () => {
               {/*  6 */}
               <div className="text-black p-4">
                 <img
+
                   src="/images/TEACHERS6.jpeg"
                   alt="Vincent Rompes"
                   className="rounded-lg w-full h-64 object-cover mb-4"
+
+                  
+
                 />
                 <h3 className="text-lg font-bold">Vincent Rompes</h3>
                 <p className="text-sm">Head of Engineering</p>
@@ -287,9 +321,13 @@ const AboutUs: React.FC = () => {
               {/*  7 */}
               <div className="text-black p-4">
                 <img
+
                   src="/images/TEACHERS7.jpeg"
                   alt="Aurielie Viez"
                   className="rounded-lg w-full h-64 object-cover mb-4"
+
+                  
+
                 />
                 <h3 className="text-lg font-bold">Aurielie Viez</h3>
                 <p className="text-sm">Senior Product Designer</p>
@@ -298,9 +336,13 @@ const AboutUs: React.FC = () => {
               {/*  8 */}
               <div className="text-black p-4">
                 <img
+
                   src="/images/TEACHERS8.jpeg"
                   alt="Ritchie Vertma"
                   className="rounded-lg w-full h-64 object-cover mb-4"
+
+                  
+
                 />
                 <h3 className="text-lg font-bold">Ritchie Vertma</h3>
                 <p className="text-sm">VP Product Strategy</p>
