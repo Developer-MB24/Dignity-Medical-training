@@ -337,7 +337,7 @@ const PediatricLifeSupport = () => {
                 </div>
                 <button
                   onClick={() => alert(`Enrolled in ${course.name}`)}
-                  className="bg-customBlue text-white text-sm px-4 py-2 rounded hover:bg-blue-700 transition duration-300"
+                  className="bg-customBlue text-white text-sm px-4 py-2 rounded hover:bg-primarygold transition duration-300"
                 >
                   ENROLL NOW
                 </button>
