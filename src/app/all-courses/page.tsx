@@ -252,6 +252,7 @@ const PediatricLifeSupport = () => {
                 >
                   <span>{selectedLanguage}</span>
                   <FaChevronDown className="ml-2 text-sm" />
+                  {/* language */}
                 </button>
                 {languageOpen && (
                   <div className="absolute mt-1 w-full bg-white border border-gray-200 rounded-md shadow-md z-10">
@@ -265,7 +266,7 @@ const PediatricLifeSupport = () => {
                         className={`px-4 py-2 cursor-pointer ${
                           selectedLanguage === lang
                             ? "bg-primarygold text-white"
-                            : "hover:bg-gray-100"
+                            : "hover:bg-primarygold"
                         }`}
                       >
                         {lang}
