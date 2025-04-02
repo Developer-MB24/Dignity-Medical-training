@@ -1,4 +1,4 @@
-"use client"
+"use client";
 import { useState } from "react";
 import Image from "next/image";
 import { useAuth } from "@/hooks/auth/authContext";
@@ -48,7 +48,7 @@ export default function SignIn() {
       <section>
         <div className="flex flex-col items-center justify-center">
           <Link href="/">
-            <Logo/>
+            <Logo />
           </Link>
         </div>
 

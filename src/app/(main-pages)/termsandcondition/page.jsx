@@ -39,14 +39,14 @@ const TermsAndConditions = () => {
   return (
     <>
       <Header />
-      <div className="bg-gray-100 min-h-screen py-10 px-5 bg-gradient-to-r from-orange-200 to-blue-200">
+      <div className="bg-goldlight min-h-screen py-10 px-5 ">
         <div className="max-w-6xl mx-auto bg-white rounded-lg shadow-md p-6">
           {/* <div className="flex justify-center mb-6">
             <Link href="/">
               <IoHome className="text-blue-600 text-4xl hover:text-blue-800" />
             </Link>
           </div> */}
-          <h1 className="text-4xl font-bold mb-6 text-center text-blue-600">
+          <h1 className="text-4xl font-bold mb-6 text-center text-goldlight">
             Terms and Conditions
           </h1>
 

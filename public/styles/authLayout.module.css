@@ -5,7 +5,8 @@
 }
 
 .mainImg {
-  background: url("../assets/course.jpg");
+  background: url("../images/slider2.jpeg");
+  
   position: absolute;
   width: 100%;
   height: 100%;

@@ -115,17 +115,21 @@ function CourseCard({ course }) {
 
   return (
     <div className="flex p-4 mb-6 bg-white border border-gray-200 rounded-lg shadow-sm hover:shadow-md transition-shadow">
-      <div className="flex-shrink-0">
+      <div className="flex-shrink-0 w-2/5">
         <Link href={`/courseDetailPage/${course.id}`}>
           <Image
-            src="/images/pages/course-1.webp" // Ensure this path is correct
+            src="/images/pages/course-1.webp"
             alt={course.course_title}
-            width={100}
-            height={100}
-            className="w-24 h-24 object-cover rounded-lg"
+            width={400}
+            height={400}
+            layout="responsive"
+            quality={100} // Set image quality to 100 for sharpness
+            priority // Ensures that the image is prioritized for faster loading
+            className="object-cover rounded-lg"
           />
         </Link>
       </div>
+
       <div className="ml-4 flex-grow">
         <Link href={`/courseDetailPage/${course.id}`}>
           <h2 className="text-xl font-semibold hover:text-primarygold">

@@ -74,11 +74,18 @@ const Banner = () => {
   ];
 
   const zoomClasses = [
-    "Article 9",
-    "Positive Behaviour Support",
-    "Preventive Abuse, Neglect, and Exploitation",
-    "Foundational Leadership Development",
-    "Becoming a Skilled Caregiver",
+    "HIPPA",
+    "Bloodborne Pathogens",
+    "Basic Life Support",
+    "Pediatric Life Support",
+    "Advanced Cardiac Life Support",
+    "CPR and First Aid",
+    "Food Handlers Card",
+    "Dementia Care and Management",
+    "Fall Prevention Awareness Training",
+    "Supporting Individuals Diagnosed with Attention Deficit Hyperactivity Disorder",
+    "End of Life Care",
+    "Principles of Positive Behavior Support",
   ];
 
   const courseOptions =
@@ -243,9 +250,9 @@ const Banner = () => {
 
         <div className="flex justify-center items-center bg-white min-h-screen">
           {/* Video Container */}
-          <div className="relative w-full max-w-5xl bg-black">
+          <div className="relative w-full h-full">
             <video
-              className="w-full h-[500px] rounded-lg shadow-lg"
+              className="w-full h-full object-cover rounded-lg shadow-lg"
               src="/images/greetingvideo.mp4"
               autoPlay
               muted
@@ -257,8 +264,6 @@ const Banner = () => {
             </video>
           </div>
         </div>
-
-       
 
         <button
           onClick={handleCheckoutVideoOption}

@@ -51,7 +51,7 @@ const HeroSection: React.FC = () => {
             </p>
             <a
               href="#jobs"
-              className="bg-goldlight hover:bg-green-600 text-white text-lg font-medium py-3 px-6 rounded-lg"
+              className="bg-goldlight hover:bg-primarygold text-white text-lg font-medium py-3 px-6 rounded-lg"
             >
               View all job openings
             </a>
@@ -75,8 +75,8 @@ const HeroSection: React.FC = () => {
             We’re only getting started
           </h2>
           <p className="text-lg text-white mt-4">
-            Dignity Medical is dedicated to its mission and is at the forefront of
-            revolutionising the ed-tech space in India.
+            Dignity Medical is dedicated to its mission and is at the forefront
+            of revolutionising the ed-tech space in India.
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 max-w-6xl mx-auto">
@@ -200,9 +200,8 @@ const HeroSection: React.FC = () => {
             innovators.
           </p>
         </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8 max-w-4xl mx-auto">
+        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8 max-w-4xl lg:max-w-5xl mx-auto">
           {[
-            
             "/images/Leadership-Principles1.jpeg",
             "/images/Leadership-Principles2.jpeg",
             "/images/Leadership-Principles3.jpeg",
@@ -211,13 +210,12 @@ const HeroSection: React.FC = () => {
             "/images/Leadership-Principles6.jpeg",
             "/images/Leadership-Principles7.jpeg",
             "/images/Leadership-Principles8.jpeg",
-            
           ].map((image, index) => (
             <div
               key={index}
-              className="border-8 border-gray-800 shadow-lg p-4 bg-white rounded-lg"
+              className="border-8 border-gray-800 shadow-lg p-2 bg-white rounded-lg"
             >
-              <div className="w-full h-80 p-2">
+              <div className="w-full h-80 ">
                 <img
                   src={image}
                   alt={`Leader ${index + 1}`}
@@ -253,17 +251,17 @@ const HeroSection: React.FC = () => {
                 name: "Arooshi Singh",
                 position: " Experience and Culture",
                 message:
-                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, dolorum." ,
-                image: "/images/slider1.jpeg", 
-                bg: "bg-green-400",
+                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, dolorum.",
+                image: "/images/slider1.jpeg",
+                bg: "bg-primarygold",
               },
               {
                 name: "Shweta Sivasankaran",
                 position: "Director, Marketing",
                 message:
-                 "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, dolorum.",
-                image: "/images/slider1.jpeg", 
-                bg: "bg-blue-400",
+                  "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Quo, dolorum.",
+                image: "/images/slider1.jpeg",
+                bg: "bg-goldlight",
               },
             ].map((testimonial, index) => (
               <div
@@ -287,9 +285,7 @@ const HeroSection: React.FC = () => {
                   <p className="text-sm text-white mb-3">
                     {testimonial.position}
                   </p>
-                  <p className="text-white text-base">
-                    {testimonial.message}
-                  </p>
+                  <p className="text-white text-base">{testimonial.message}</p>
                 </div>
               </div>
             ))}
@@ -300,9 +296,12 @@ const HeroSection: React.FC = () => {
       {/* Why Unacademy Section */}
       <section className="bg-gray-50 py-16 px-8">
         <div className="text-center mb-12">
-          <h2 className="text-4xl font-bold text-gray-900">Why Dignity Medical?</h2>
+          <h2 className="text-4xl font-bold text-gray-900">
+            Why Dignity Medical?
+          </h2>
           <p className="text-lg text-gray-700 mt-4">
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti, delectus!
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti,
+            delectus!
           </p>
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-8 max-w-6xl mx-auto">

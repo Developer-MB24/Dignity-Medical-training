@@ -39,14 +39,14 @@ const PrivacyPolicy = () => {
   return (
     <>
       <Header />
-      <div className="bg-gray-100 min-h-screen py-10 px-5 bg-gradient-to-r from-orange-200 to-blue-200">
+      <div className="bg-goldlight min-h-screen py-10 px-5 ">
         <div className="max-w-6xl mx-auto bg-white rounded-lg shadow-md p-6">
           {/* <div className="flex justify-center mb-6">
             <Link href="/">
               <IoHome className="text-blue-600 text-4xl hover:text-blue-800" />
             </Link>
           </div> */}
-          <h1 className="text-4xl font-bold mb-6 text-center text-blue-600">
+          <h1 className="text-4xl font-bold mb-6 text-center text-goldlight">
             Privacy Policy
           </h1>
 
@@ -134,37 +134,6 @@ const PrivacyPolicy = () => {
 
 export default PrivacyPolicy;
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 // import Link from "next/link";
 // import React from "react";
 // import { IoHome } from "react-icons/io5";
@@ -176,7 +145,7 @@ export default PrivacyPolicy;
 //         <div className="flex text-4xl justify-center p-4">
 //           <Link href="/">
 //             <IoHome className="hover:text-primarygold" />
-//           </Link> 
+//           </Link>
 //         </div>
 //         <h1 className="text-3xl font-bold mb-6 text-gray-800 bg-gradient-to-r from-blue-600 via-green-500 to-indigo-400 inline-block text-transparent bg-clip-text">
 //           Privacy Policy

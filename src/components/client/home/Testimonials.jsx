@@ -57,7 +57,10 @@ const Testimonials = () => {
   };
 
   return (
-    <div className="bg-customBlue text-white py-12 px-4 sm:px-8" id="testimonials">
+    <div
+      className="bg-customBlue text-white py-12 px-4 sm:px-8"
+      id="testimonials"
+    >
       <h2 className="text-4xl font-bold text-center mb-8">Testimonials</h2>
       <div className="relative flex justify-center items-center">
         {/* Left Arrow */}
@@ -115,24 +118,6 @@ const Testimonials = () => {
 };
 
 export default Testimonials;
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 // old testimonials
 // "use client";

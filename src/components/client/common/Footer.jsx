@@ -42,7 +42,7 @@ const Footer = () => {
 
   return (
     <>
-      <footer className="bg-gray-800 text-white py-12">
+      <footer className=" text-white pt-12">
         {/* Sign Up Section */}
         <div className="bg-goldlight py-8">
           <div className="max-w-7xl mx-auto text-center">
@@ -336,7 +336,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="border-t border-gray-700 mt-8 pt-4 text-center">
+        <div className="bg-gray-800 border-t border-gray-700  pt-4 text-center">
           <p>Copyright 2024 &copy; Dignity. All Rights Reserved.</p>
           <p>
             Website Design by:{" "}
