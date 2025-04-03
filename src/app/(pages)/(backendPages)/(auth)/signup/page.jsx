@@ -183,10 +183,7 @@ export default function SignUp() {
                     onChange={(e) => setRole(e.target.value)}
                     className="mr-2"
                   />
-                  <label
-                    htmlFor="user"
-                    className="text-gray-700 dark:text-white"
-                  >
+                  <label htmlFor="user" className="text-black dark:text-white ">
                     User
                   </label>
                 </div>
@@ -202,7 +199,7 @@ export default function SignUp() {
                   />
                   <label
                     htmlFor="instructor"
-                    className="text-gray-700 dark:text-white"
+                    className="text-black dark:text-white"
                   >
                     Instructor
                   </label>
