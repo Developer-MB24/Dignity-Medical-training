@@ -328,7 +328,7 @@ const Footer = () => {
                 <li>
                   <div className="flex items-start">
                     <FaMapMarkerAlt className="mr-3 text-gray-300" size={20} />
-                    <p>45720 W Tucker Rd, Maricopa, AZ 85139</p>
+                    <p>1801 S Extension Rd, Mesa Az 85210</p>
                   </div>
                 </li>
               </ul>
