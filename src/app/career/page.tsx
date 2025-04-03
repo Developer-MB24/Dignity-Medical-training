@@ -69,7 +69,7 @@ const HeroSection: React.FC = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="bg-goldlight  py-16 px-8 text-center">
+      <section className="bg-goldlight py-16 px-8 text-center">
         <div className="max-w-4xl mx-auto mb-12">
           <h2 className="text-3xl font-bold text-white">
             We’re only getting started
@@ -88,8 +88,11 @@ const HeroSection: React.FC = () => {
             { logo: "👥", value: "5M+", label: "Active Users" },
             { logo: "🎓", value: "49M+", label: "Learners" },
           ].map((stat, index) => (
-            <div key={index} className="flex flex-col items-center text-center">
-              <div className="w-16 h-16 bg-white shadow-md rounded-full flex items-center justify-center mb-4 text-3xl">
+            <div
+              key={index}
+              className="flex flex-col items-center text-center group"
+            >
+              <div className="w-20 h-20 bg-white shadow-md rounded-full flex items-center justify-center mb-4 text-4xl transition-transform duration-300 transform group-hover:scale-110">
                 {stat.logo}
               </div>
               <p className="text-2xl font-bold text-white">{stat.value}</p>
@@ -311,7 +314,7 @@ const HeroSection: React.FC = () => {
               description:
                 "Maternity Leave | Paternity Leave | Adoption Leave | Period Leave | Creche Support",
               icon: (
-                <div className="bg-green-100 text-green-600 p-4 rounded-lg">
+                <div className="bg-white text-primarygold p-4 rounded-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -334,7 +337,7 @@ const HeroSection: React.FC = () => {
               description:
                 "Insurance Cover for you and your family | Pension Scheme | Flexible Benefit Plan | COVID-19 Insurance",
               icon: (
-                <div className="bg-purple-100 text-purple-600 p-4 rounded-lg">
+                <div className="bg-white text-goldlight p-4 rounded-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -357,7 +360,7 @@ const HeroSection: React.FC = () => {
               description:
                 "Exclusive partnership with Practo, Ultrahuman | Monthly wellness programmes | Game Zone | Open Pantry",
               icon: (
-                <div className="bg-blue-100 text-blue-600 p-4 rounded-lg">
+                <div className="bg-white text-goldlight p-4 rounded-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -380,7 +383,7 @@ const HeroSection: React.FC = () => {
               description:
                 "Competitive compensation | Best-in-class mentors | Accelerated growth | Timely reviews",
               icon: (
-                <div className="bg-red-100 text-red-600 p-4 rounded-lg">
+                <div className="bg-white text-primarygold p-4 rounded-lg">
                   <svg
                     xmlns="http://www.w3.org/2000/svg"
                     fill="none"
@@ -401,7 +404,7 @@ const HeroSection: React.FC = () => {
           ].map((item, index) => (
             <div
               key={index}
-              className=" p-6 shadow-md rounded-lg flex items-start gap-4"
+              className="p-6 shadow-md rounded-lg flex items-start gap-4"
             >
               {item.icon}
               <div>

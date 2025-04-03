@@ -147,7 +147,10 @@ const Header = ({ token }) => {
       <div className="text-center py-4 bg-goldlight text-white">
         <div className="flex flex-wrap justify-center items-center space-x-4 sm:space-x-8 text-nowrap">
           <div className="flex items-center space-x-2 hover:bg-primarygold p-2 rounded text-white">
-            <Link href="/" onClick={() => alert("Not yet implemented!")}>
+            <Link
+              href="/agency-signup"
+              // onClick={() => alert("Not yet implemented!")}
+            >
               <h4 className="text-sm sm:text-base">NEW AGENCY SIGNUP</h4>
             </Link>
           </div>
@@ -233,7 +236,7 @@ const Header = ({ token }) => {
               </div>
               <div className="group relative">
                 <a href="/about" className="text-black hover:text-goldlight">
-                  ABOUT 
+                  ABOUT
                 </a>
                 {/* <div className="absolute left-0 p-2 rounded hidden group-hover:block bg-white shadow-lg text-black">
                   <a
@@ -282,9 +285,7 @@ const Header = ({ token }) => {
                 CONSULTING
               </Link>
 
-              
               <Link href="/career" className="text-black hover:text-goldlight">
-
                 CAREER
               </Link>
               <div className="py-4 flex items-center justify-between bg-[#ececec]">

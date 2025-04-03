@@ -156,12 +156,10 @@ const CourseDetails = ({ params }) => {
               )}
             </div>
             <div className="mb-6">
-              <p className="text-3xl text-red-600 font-bold mb-2">
-                ${course_price}
-              </p>
+              <p className="text-3xl  font-bold mb-2">${course_price}</p>
             </div>
             <Link href={`/user/enrollpage/${id}`}>
-              <button className="w-full bg-red-600 text-white py-3 rounded-lg text-lg font-semibold mb-4">
+              <button className="w-full bg-goldlight hover:bg-primarygold text-white py-3 rounded-lg text-lg font-semibold mb-4">
                 Enroll Now
               </button>
             </Link>

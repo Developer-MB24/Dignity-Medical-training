@@ -11,7 +11,8 @@ export default function Home() {
   const cookieStore = cookies();
   const token = cookieStore.get("token")?.value;
   return (
-    <main className="bg-gradient-to-r from-[#eee] to-[#ca8a0426]">
+    <main>
+      {/* className="bg-gradient-to-r from-[#eee] to-[#ca8a0426]" */}
       <Header token={token} />
       <Banner />
       <Courses />
