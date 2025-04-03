@@ -56,7 +56,7 @@ const Page = () => {
               </div>
               <div>
                 <h2 className="text-xl font-semibold">Location</h2>
-                <p>45720 W Tucker Rd, Maricopa, AZ 85139</p>
+                <p>1801 S Extension Rd, Mesa Az 85210</p>
               </div>
             </div>
 
