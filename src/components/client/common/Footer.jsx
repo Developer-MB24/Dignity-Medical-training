@@ -133,16 +133,16 @@ const Footer = () => {
         </div>
 
         {/* Footer Links */}
-        <div className="bg-gray-800 py-8">
+        <div className="bg-white border-t border-gray-700 py-8">
           <div className="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-4 gap-8 px-6 items-start">
             {/* Logo & Social Media Section */}
             <div className="flex flex-col items-center space-y-6">
               <Image
-                src="/images/pages/whitedignity.png"
+                src="/images/pages/lolo.png"
                 alt="Dignity Medical Training Logo"
                 width={150}
                 height={150}
-                className="mb-2"
+                className="mb-2 "
               />
               <div className="flex space-x-4">
                 <a
@@ -150,74 +150,53 @@ const Footer = () => {
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaFacebook
-                    className="text-gray-300 hover:text-white"
-                    size={24}
-                  />
+                  <FaFacebook className="text-goldlight " size={24} />
                 </a>
                 <a
                   href="https://www.instagram.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaInstagram
-                    className="text-gray-300 hover:text-white"
-                    size={24}
-                  />
+                  <FaInstagram className="text-goldlight " size={24} />
                 </a>
                 <a
                   href="https://www.linkedin.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  <FaLinkedin
-                    className="text-gray-300 hover:text-white"
-                    size={24}
-                  />
+                  <FaLinkedin className="text-goldlight " size={24} />
                 </a>
                 <a
                   href="https://www.youtube.com"
                   target="_blank"
                   rel="noopener noreferrer"
                 >
-                  {/* <FaYoutube className="text-gray-300 hover:text-white" size={24} /> */}
+                  {/* <FaYoutube className="text-goldlight " size={24} /> */}
                 </a>
               </div>
             </div>
 
             {/* Courses Section */}
-            <div>
-              <h4 className="text-xl font-semibold text-white mb-4">Courses</h4>
-              <ul className="space-y-3 text-gray-400">
+            <div className="font-medium text-black">
+              <h4 className="text-xl font-semibold mb-4">Courses</h4>
+              <ul className="space-y-3 font-medium text-black">
                 <li>
-                  <a
-                    href="#allcourse"
-                    className="hover:text-white transition-colors"
-                  >
+                  <a href="#allcourse" className=" transition-colors">
                     All Courses
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#online"
-                    className="hover:text-white transition-colors"
-                  >
+                  <a href="#online" className=" transition-colors">
                     Online - Self Paced
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#classroom"
-                    className="hover:text-white transition-colors"
-                  >
+                  <a href="#classroom" className=" transition-colors">
                     Classroom Courses
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#zoom"
-                    className="hover:text-white transition-colors"
-                  >
+                  <a href="#zoom" className=" transition-colors">
                     Zoom Classes
                   </a>
                 </li>
@@ -225,61 +204,49 @@ const Footer = () => {
             </div>
 
             {/* Quick Links Section */}
-            <div>
-              <h4 className="text-xl font-semibold text-white mb-4">
-                Quick Links
-              </h4>
-              <ul className="space-y-3 text-gray-400">
+            <div className="font-medium text-black">
+              <h4 className="text-xl font-semibold  mb-4">Quick Links</h4>
+              <ul className="space-y-3 font-medium text-black">
                 <li>
-                  <a
-                    href="#aboutus"
-                    className="hover:text-white transition-colors"
-                  >
+                  <a href="/" className=" transition-colors">
+                    Home
+                  </a>
+                </li>
+                <li>
+                  <a href="#aboutus" className=" transition-colors">
                     About Us
                   </a>
                 </li>
-                <li>
+                {/* <li>
                   <a
                     href="#leadership"
-                    className="hover:text-white transition-colors"
+                    className=" transition-colors"
                   >
                     Leadership
                   </a>
-                </li>
+                </li> */}
                 <li>
-                  <a
-                    href="#instructors"
-                    className="hover:text-white transition-colors"
-                  >
+                  <a href="#Our-Instructors" className=" transition-colors">
                     Instructors
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="#testimonials"
-                    className="hover:text-white transition-colors"
-                  >
+                  <a href="#testimonials" className=" transition-colors">
                     Testimonials
                   </a>
                 </li>
                 <li>
-                  <a href="/faq" className="hover:text-white transition-colors">
+                  <a href="/faq" className=" transition-colors">
                     FAQ
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/privacypolicy"
-                    className="hover:text-white transition-colors"
-                  >
+                  <a href="/privacypolicy" className=" transition-colors">
                     Privacy Policy
                   </a>
                 </li>
                 <li>
-                  <a
-                    href="/termsandcondition"
-                    className="hover:text-white transition-colors"
-                  >
+                  <a href="/termsandcondition" className=" transition-colors">
                     Terms of Service
                   </a>
                 </li>
@@ -288,47 +255,51 @@ const Footer = () => {
 
             {/* Contact Us Section */}
             <div>
-              <h4 className="text-xl font-semibold text-white mb-4">
+              <h4 className="text-xl font-semibold text-black mb-4">
                 Contact Us
               </h4>
-              <ul className="space-y-3 text-gray-400">
+              <ul className="space-y-3">
                 <li>
-                  <div className="flex items-center">
-                    <FaEnvelope className="mr-3 text-gray-300" size={20} />
+                  <div className="flex items-center gap-1 text-black">
+                    <FaEnvelope className="text-goldlight" size={20} />
                     <a
                       href="mailto:contact@dignitymedicaltraining.com"
-                      className="hover:text-white transition-colors"
+                      className="transition-colors"
                     >
                       contact@dignitymedicaltraining.com
                     </a>
                   </div>
                 </li>
+
                 <li>
-                  <div className="flex items-center">
-                    <FaPhoneAlt className="mr-3 text-gray-300" size={20} />
-                    <a
-                      href="tel:+1(888)-404-6348"
-                      className="hover:text-white transition-colors"
-                    >
-                      +1(888)-404-6348
+                  <div className="flex items-center font-medium text-black">
+                    <FaPhoneAlt className="mr-3 text-goldlight" size={20} />
+                    <a href="tel:+18884046348" className="transition-colors">
+                      +1 (888) 404-6348
                     </a>
                   </div>
                 </li>
+
                 <li>
-                  <div className="flex items-center">
-                    <FaPhoneAlt className="mr-3 text-gray-300" size={20} />
-                    <a
-                      href="tel:+1(480)-351-2333"
-                      className="hover:text-white transition-colors"
-                    >
-                      +1 (480)-351-2333
+                  <div className="flex items-center font-medium text-black">
+                    <FaPhoneAlt className="mr-3 text-goldlight" size={20} />
+                    <a href="tel:+14803512333" className="transition-colors">
+                      +1 (480) 351-2333
                     </a>
                   </div>
                 </li>
+
                 <li>
-                  <div className="flex items-start">
-                    <FaMapMarkerAlt className="mr-3 text-gray-300" size={20} />
-                    <p>1801 S Extension Rd, Mesa Az 85210</p>
+                  <div className="flex items-start font-medium text-black">
+                    <FaMapMarkerAlt className="mr-3 text-goldlight" size={20} />
+                    <a
+                      href="https://www.google.com/maps?q=1801+S+Extension+Rd,+Mesa+Az+85210"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="transition-colors"
+                    >
+                      1801 S Extension Rd, Mesa Az 85210
+                    </a>
                   </div>
                 </li>
               </ul>
@@ -336,7 +307,7 @@ const Footer = () => {
           </div>
         </div>
 
-        <div className="bg-gray-800 border-t border-gray-700  pt-4 text-center">
+        <div className="bg-white text-black border-t border-gray-700 font-semibold pt-4 text-center">
           <p>Copyright 2024 &copy; Dignity. All Rights Reserved.</p>
           <p>
             Website Design by:{" "}

@@ -398,7 +398,7 @@ const Header = ({ token }) => {
                   </div>
                 ) : (
                   <Link href="/signin" className={`animate-text`}>
-                    <FaUserCircle size={30} />
+                    <FaUserCircle size={30} className="text-goldlight" />
                   </Link>
                 )}
               </div>
@@ -408,7 +408,11 @@ const Header = ({ token }) => {
                   className=" px-2 py-2"
                   suppressHydrationWarning
                 >
-                  <FontAwesomeIcon icon={faCartShopping} className="text-lg" />
+                  <FontAwesomeIcon
+                    icon={faCartShopping}
+                    size={30}
+                    className="text-lg text-goldlight"
+                  />
                   {cartCount > 0 && (
                     <span className="absolute top-0 right-0 bg-primarygold text-white text-xs rounded-full px-2 py-1 transform translate-x-1/2 -translate-y-1/2">
                       {cartCount}

@@ -121,67 +121,68 @@ const AboutUs: React.FC = () => {
 
         <section className="py-16 bg-gray-50">
           <div className="max-w-7xl mx-auto px-6">
-            <div className=" flex gap-8">
-              <div className="lg:col-span-2 mb-10 text-center">
-                <h2 className="text-3xl font-bold mb-4">
-                  World-Class Learning for Anyone, Anywhere
-                </h2>
-                <p className="text-gray-600 max-w-2xl mx-auto">
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Velit omnis assumenda consequatur sint. Eveniet sunt dolores
-                  suscipit voluptas error saepe.
-                </p>
-              </div>
+            <div className="text-center mb-10">
+              <h2 className="text-3xl font-bold mb-4">
+                World-Class Learning for Anyone, Anywhere
+              </h2>
+              <p className="text-gray-600 max-w-2xl mx-auto">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Velit
+                omnis assumenda consequatur sint. Eveniet sunt dolores suscipit
+                voluptas error saepe.
+              </p>
+            </div>
 
+            {/* First row of cards */}
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
               {/* Card 1 */}
-              <div className=" p-6 bg-gray-100 shadow">
+              <div className="p-6 bg-gray-100 shadow transition duration-300 hover:bg-goldlight hover:text-white group">
                 <h3 className="text-lg font-bold mb-4">
                   Curriculum Based on Industry Needs
                 </h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-sm text-gray-600 group-hover:text-white">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Velit omnis assumenda consequatur sint.
                 </p>
               </div>
 
               {/* Card 2 */}
-              <div className=" p-6 bg-goldlight text-white  shadow">
+              <div className="p-6 bg-gray-100 shadow transition duration-300 hover:bg-goldlight hover:text-white group">
                 <h3 className="text-lg font-bold mb-4">
                   Blended-Learning Method
                 </h3>
-                <p className="text-sm">
+                <p className="text-sm text-gray-600 group-hover:text-white">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Velit omnis assumenda consequatur sint.
                 </p>
               </div>
             </div>
 
-            {/* scond row */}
-            <div className="grid grid-cols-1 md:grid-cols-3 justify-items-end gap-8 mt-10">
+            {/* Second row of cards */}
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mt-10">
               {/* Card 3 */}
-              <div className="p-6 bg-gray-100  shadow">
+              <div className="p-6 bg-gray-100 shadow transition duration-300 hover:bg-goldlight hover:text-white group">
                 <h3 className="text-lg font-bold mb-4">Certification</h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-sm text-gray-600 group-hover:text-white">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Velit omnis assumenda consequatur sint.
                 </p>
               </div>
 
               {/* Card 4 */}
-              <div className="p-6 bg-goldlight text-white  shadow">
+              <div className="p-6 bg-gray-100 shadow transition duration-300 hover:bg-goldlight hover:text-white group">
                 <h3 className="text-lg font-bold mb-4">
                   Rating "Auto-grading"
                 </h3>
-                <p className="text-sm">
+                <p className="text-sm text-gray-600 group-hover:text-white">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Velit omnis assumenda consequatur sint.
                 </p>
               </div>
 
               {/* Card 5 */}
-              <div className="p-6 bg-gray-100  shadow">
+              <div className="p-6 bg-gray-100 shadow transition duration-300 hover:bg-goldlight hover:text-white group">
                 <h3 className="text-lg font-bold mb-4">Ready to Work</h3>
-                <p className="text-gray-600 text-sm">
+                <p className="text-sm text-gray-600 group-hover:text-white">
                   Lorem ipsum, dolor sit amet consectetur adipisicing elit.
                   Velit omnis assumenda consequatur sint.
                 </p>

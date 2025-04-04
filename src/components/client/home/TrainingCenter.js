@@ -57,7 +57,7 @@ const TrainingCenter = () => {
   };
 
   return (
-    <section className="relative bg-[#f8f8f8] py-16 px-4">
+    <section id="Our-Instructors" className="relative bg-[#f8f8f8] py-16 px-4">
       <div className="container mx-auto flex flex-col md:flex-row">
         {/* Content Side */}
         <div className="md:w-1/2 flex flex-col items-center">

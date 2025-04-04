@@ -188,8 +188,8 @@ const PediatricLifeSupport = () => {
               onClick={() => handleTabClick("all")}
               className={`flex items-center space-x-2 px-4 py-2 text-sm font-medium ${
                 activeTab === "all"
-                  ? "text-red-600 border-b-2 border-red-600"
-                  : "text-gray-500 hover:text-red-600"
+                  ? "text-primarygold border-b-2 border-primarygold"
+                  : "text-gray-500 hover:text-primarygold"
               }`}
             >
               <span className="text-lg">●</span> <span>All</span>
@@ -198,8 +198,8 @@ const PediatricLifeSupport = () => {
               onClick={() => handleTabClick("online")}
               className={`flex items-center space-x-2 px-4 py-2 text-sm font-medium ${
                 activeTab === "online"
-                  ? "text-red-600 border-b-2 border-red-600"
-                  : "text-gray-500 hover:text-red-600"
+                  ? "text-primarygold border-b-2 border-primarygold"
+                  : "text-gray-500 hover:text-primarygold"
               }`}
             >
               <span className="text-lg">💻</span>{" "}
@@ -209,8 +209,8 @@ const PediatricLifeSupport = () => {
               onClick={() => handleTabClick("classroom")}
               className={`flex items-center space-x-2 px-4 py-2 text-sm font-medium ${
                 activeTab === "classroom"
-                  ? "text-red-600 border-b-2 border-red-600"
-                  : "text-gray-500 hover:text-red-600"
+                  ? "text-primarygold border-b-2 border-primarygold"
+                  : "text-gray-500 hover:text-primarygold"
               }`}
             >
               <span className="text-lg">👩‍🏫</span> <span>Classroom Courses</span>
@@ -219,8 +219,8 @@ const PediatricLifeSupport = () => {
               onClick={() => handleTabClick("zoom")}
               className={`flex items-center space-x-2 px-4 py-2 text-sm font-medium ${
                 activeTab === "zoom"
-                  ? "text-red-600 border-b-2 border-red-600"
-                  : "text-gray-500 hover:text-red-600"
+                  ? "text-primarygold border-b-2 border-primarygold"
+                  : "text-gray-500 hover:text-primarygold"
               }`}
             >
               <span className="text-lg">📹</span> <span>Zoom Classes</span>
