@@ -281,7 +281,10 @@ const Header = ({ token }) => {
               <Link href="/faq" className="text-black hover:text-goldlight">
                 FAQ
               </Link>
-              <Link href="#" className="text-black hover:text-goldlight">
+              <Link
+                href="/consulting"
+                className="text-black hover:text-goldlight"
+              >
                 CONSULTING
               </Link>
 
@@ -489,7 +492,7 @@ const Header = ({ token }) => {
               FAQ
             </Link>
             <Link
-              href="#"
+              href="/consulting"
               className="block px-2 py-1 text-black hover:bg-primarygold hover:text-white rounded"
             >
               CONSULTING
