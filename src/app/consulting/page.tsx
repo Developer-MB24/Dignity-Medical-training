@@ -137,73 +137,6 @@ export default function ConsultingPage() {
         </div>
       </section>
 
-      {/* FormSection */}
-      <section className="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-16 bg-white">
-        {/* Left Image */}
-        <div className="relative w-full md:w-1/2 h-96 md:h-[600px] mb-10 md:mb-0">
-          <Image
-            src="/coursesimage/abouthero1.jpeg"
-            alt="Flatlay with keyboard and phone"
-            fill
-            className="object-cover object-left"
-            priority
-          />
-        </div>
-
-        {/* Right Content */}
-        <div className="w-full md:w-1/2 md:pl-12 max-w-xl text-center md:text-left">
-          <h2 className="text-3xl md:text-4xl font-handwriting mb-2">
-            Create your sold-out offers
-          </h2>
-          <p className="uppercase text-sm tracking-widest font-semibold mb-4">
-            Free Instant Access Masterclass
-          </p>
-          <p className="text-gray-700 mb-6 leading-relaxed">
-            In 45–mins get the 3 Insider Secrets to create your sold-out offers
-            for 6–Figures $ and beyond – make this the year you majorly leverage
-            by teaching what you know.
-          </p>
-
-          {/* Form */}
-          <form className="space-y-4">
-            <input
-              type="text"
-              placeholder="First Name*"
-              className="w-full border border-yellow-400 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
-            />
-            <input
-              type="email"
-              placeholder="Email*"
-              className="w-full border border-yellow-400 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
-            />
-
-            {/* Checkbox */}
-            <label className="flex items-start space-x-2 text-sm text-gray-700">
-              <input type="checkbox" className="mt-1" />
-              <span>
-                I agree to receiving occasional marketing emails from
-                Segerius-Bruce Coaching and the{" "}
-                <a href="#" className="text-yellow-600 underline">
-                  T&Cs
-                </a>{" "}
-                &{" "}
-                <a href="#" className="text-yellow-600 underline">
-                  privacy policy
-                </a>
-                .
-              </span>
-            </label>
-
-            <button
-              type="submit"
-              className="w-full bg-yellow-500 text-white font-bold py-3 rounded hover:bg-yellow-600 transition"
-            >
-              REGISTER NOW!
-            </button>
-          </form>
-        </div>
-      </section>
-
       <section className="flex flex-col md:flex-row bg-white items-stretch">
         {/* Left - Image */}
         <div className="relative w-full md:w-1/2 h-[600px]">
@@ -507,8 +440,8 @@ export default function ConsultingPage() {
         </div>
       </section>
 
-      <section className="relative w-full h-[600px] overflow-hidden">
-        {/* Video */}
+      {/* video  */}
+      {/* <section className="relative w-full h-[600px] overflow-hidden">
         <video
           autoPlay
           muted
@@ -520,7 +453,6 @@ export default function ConsultingPage() {
           Your browser does not support the video tag.
         </video>
 
-        {/* Overlay text at bottom */}
         <div className="absolute bottom-12 w-full text-center px-4 z-10">
           <h2 className="text-2xl md:text-4xl font-serif text-black">
             What are you being called to do?
@@ -530,8 +462,74 @@ export default function ConsultingPage() {
           </p>
         </div>
 
-        {/* Optional: dark gradient for text readability */}
         <div className="absolute inset-0 bg-gradient-to-t from-white/80 via-white/20 to-transparent z-[1]" />
+      </section> */}
+
+      {/* FormSection */}
+      <section className="flex flex-col md:flex-row items-center justify-between px-6 md:px-16 py-16 bg-white">
+        {/* Left Image */}
+        <div className="relative w-full md:w-1/2 h-96 md:h-[600px] mb-10 md:mb-0">
+          <Image
+            src="/coursesimage/abouthero1.jpeg"
+            alt="Flatlay with keyboard and phone"
+            fill
+            className="object-cover object-left"
+            priority
+          />
+        </div>
+
+        {/* Right Content */}
+        <div className="w-full md:w-1/2 md:pl-12 max-w-xl text-center md:text-left">
+          <h2 className="text-3xl md:text-4xl font-handwriting mb-2">
+            Create your sold-out offers
+          </h2>
+          <p className="uppercase text-sm tracking-widest font-semibold mb-4">
+            Free Instant Access Masterclass
+          </p>
+          <p className="text-gray-700 mb-6 leading-relaxed">
+            In 45–mins get the 3 Insider Secrets to create your sold-out offers
+            for 6–Figures $ and beyond – make this the year you majorly leverage
+            by teaching what you know.
+          </p>
+
+          {/* Form */}
+          <form className="space-y-4">
+            <input
+              type="text"
+              placeholder="First Name*"
+              className="w-full border border-yellow-400 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            />
+            <input
+              type="email"
+              placeholder="Email*"
+              className="w-full border border-yellow-400 p-3 rounded-md focus:outline-none focus:ring-2 focus:ring-yellow-500"
+            />
+
+            {/* Checkbox */}
+            <label className="flex items-start space-x-2 text-sm text-gray-700">
+              <input type="checkbox" className="mt-1" />
+              <span>
+                I agree to receiving occasional marketing emails from
+                Segerius-Bruce Coaching and the{" "}
+                <a href="#" className="text-yellow-600 underline">
+                  T&Cs
+                </a>{" "}
+                &{" "}
+                <a href="#" className="text-yellow-600 underline">
+                  privacy policy
+                </a>
+                .
+              </span>
+            </label>
+
+            <button
+              type="submit"
+              className="w-full bg-yellow-500 text-white font-bold py-3 rounded hover:bg-yellow-600 transition"
+            >
+              REGISTER NOW!
+            </button>
+          </form>
+        </div>
       </section>
 
       <section className="bg-white py-20 px-6 md:px-20 text-center">
@@ -617,7 +615,7 @@ export default function ConsultingPage() {
         </div>
       </section>
 
-      <section
+      {/* <section
         className="relative bg-white bg-cover bg-center py-20 px-6 md:px-12 text-center"
         style={{ backgroundImage: "url('/images/slider3.jpeg')" }}
       >
@@ -625,7 +623,6 @@ export default function ConsultingPage() {
           Client Results
         </h2>
 
-        {/* Keyed quote for proper animation */}
         <div
           key={testimonialIndex}
           className="transition-opacity duration-700 ease-in-out text-xl text-gray-800 max-w-3xl mx-auto min-h-[100px] opacity-100"
@@ -636,7 +633,6 @@ export default function ConsultingPage() {
           </p>
         </div>
 
-        {/* Dots */}
         <div className="flex justify-center mt-8 space-x-2">
           {testimonials.map((_, i) => (
             <span
@@ -647,10 +643,10 @@ export default function ConsultingPage() {
             />
           ))}
         </div>
-      </section>
+      </section> */}
 
-      <section className="relative w-full h-[500px]">
-        {/* Background Image */}
+      {/* <section className="relative w-full h-[500px]">
+       
         <Image
           src="/images/slider2.jpeg"
           alt="Facebook Group Cover"
@@ -659,13 +655,13 @@ export default function ConsultingPage() {
           priority
         />
 
-        {/* Overlay CTA Button */}
+       
         <div className="absolute bottom-10 left-1/2 transform -translate-x-1/2 z-10">
           <button className="bg-white border border-yellow-500 text-yellow-700 uppercase tracking-wider px-6 py-3 text-sm shadow-md hover:bg-yellow-50 transition">
             Join the Facebook Group
           </button>
         </div>
-      </section>
+      </section> */}
 
       <section className="bg-white py-20 px-6 md:px-16 text-center">
         <h2 className="text-4xl md:text-5xl font-serif mb-12">
@@ -738,8 +734,8 @@ export default function ConsultingPage() {
         </div>
       </section>
 
-      <section className="relative bg-white h-[650px] w-full overflow-hidden">
-        {/* Background Image */}
+      {/* <section className="relative bg-white w-full overflow-hidden pb-20">
+      
         <Image
           src="/images/slider2.jpeg"
           alt="Desk and pen background"
@@ -747,89 +743,95 @@ export default function ConsultingPage() {
           className="object-cover object-center"
         />
 
-        {/* Content */}
-        <div className="relative z-10 flex flex-col md:flex-row justify-between items-start px-6 md:px-20 py-20 text-black h-full">
-          {/* Left - Logo & Footer */}
-          <div className="w-full md:w-1/2 space-y-6">
-            <div>
-              <p className="font-handwriting text-6xl text-gray-300 leading-none">
-                Chanelle
+       
+        <div className="relative z-10 px-6 md:px-20 pt-20 text-black">
+          
+          <div className="flex flex-col md:flex-row justify-between items-start gap-10">
+            
+            <div className="w-full md:w-1/2 space-y-6">
+              <div>
+                <p className="font-handwriting text-6xl text-gray-300 leading-none">
+                  Chanelle
+                </p>
+                <p className="font-serif text-2xl font-medium -mt-4">
+                  Segerius Bruce
+                </p>
+              </div>
+
+              <p className="text-sm text-gray-800">
+                © 2025 Segerius-Bruce Coaching
               </p>
-              <p className="font-serif text-2xl font-medium -mt-4">
-                Segerius Bruce
+              <p className="text-sm underline text-yellow-700">
+                Privacy Policy
+              </p>
+              <p className="text-sm text-gray-700">
+                Website by Segerius-Bruce Coaching
               </p>
             </div>
 
-            <p className="text-sm text-gray-800">
-              © 2025 Segerius-Bruce Coaching
-            </p>
-            <p className="text-sm underline text-yellow-700">Privacy Policy</p>
-            <p className="text-sm text-gray-700">
-              Website by Segerius-Bruce Coaching
-            </p>
+           
+            <div className="w-full md:w-[450px] space-y-4">
+              <h2 className="text-xl uppercase tracking-wider">
+                Free{" "}
+                <span className="font-handwriting text-3xl">Masterclass</span>
+              </h2>
+              <p className="text-sm text-gray-800">
+                3 Insider secrets to adding mentoring, coaching or training as
+                an extra arm to your business (instant access)
+              </p>
+
+              <input
+                type="text"
+                placeholder="First Name*"
+                className="w-full border border-yellow-500 px-4 py-2 mt-2"
+              />
+              <input
+                type="email"
+                placeholder="Email*"
+                className="w-full border border-yellow-500 px-4 py-2"
+              />
+
+              <label className="text-sm flex items-start gap-2 mt-2">
+                <input type="checkbox" className="mt-1" />I agree to receiving
+                occasional marketing emails from Segerius-Bruce Coaching and the{" "}
+                <a href="#" className="text-yellow-700 underline">
+                  T&Cs & privacy policy
+                </a>
+                .
+              </label>
+
+              <button className="w-full bg-[#FFD700] hover:bg-yellow-700 text-white py-3 uppercase tracking-wider mt-4">
+                Register Now!
+              </button>
+            </div>
           </div>
 
-          {/* Right - Form */}
-          <div className="w-full md:w-[450px] mt-12 md:mt-0 space-y-4">
-            <h2 className="text-xl uppercase tracking-wider">
-              Free{" "}
-              <span className="font-handwriting text-3xl">Masterclass</span>
-            </h2>
-            <p className="text-sm text-gray-800">
-              3 Insider secrets to adding mentoring, coaching or training as an
-              extra arm to your business (instant access)
-            </p>
+          
+          <div className="text-center mt-16 space-y-4">
+         
+            <div className="flex justify-center space-x-6 text-xl">
+              <i className="fab fa-instagram" />
+              <i className="fab fa-facebook" />
+              <i className="fab fa-pinterest" />
+              <i className="fab fa-envelope" />
+            </div>
 
-            <input
-              type="text"
-              placeholder="First Name*"
-              className="w-full border border-yellow-500 px-4 py-2 mt-2"
-            />
-            <input
-              type="email"
-              placeholder="Email*"
-              className="w-full border border-yellow-500 px-4 py-2"
-            />
-
-            <label className="text-sm flex items-start gap-2 mt-2">
-              <input type="checkbox" className="mt-1" />I agree to receiving
-              occasional marketing emails from Segerius-Bruce Coaching and the{" "}
-              <a href="#" className="text-yellow-700 underline">
-                T&Cs & privacy policy
+            
+            <div className="text-sm text-black space-x-6">
+              <a href="#" className="hover:text-yellow-600">
+                Home
               </a>
-              .
-            </label>
+              <a href="/consulting/about">About</a>
+              <a href="#">Client Results</a>
+              <a href="#">Work With Me</a>
+              <a href="#">Blog</a>
+              <a href="#">Contact</a>
+            </div>
 
-            <button className="w-full bg-[#FFD700] hover:bg-yellow-700 text-white py-3 uppercase tracking-wider mt-4">
-              Register Now!
-            </button>
+            <p className="text-xs text-gray-500">Member Login</p>
           </div>
         </div>
-
-        {/* Bottom Menu */}
-        <div className="relative z-10 text-center mt-10 space-y-4">
-          {/* Icons */}
-          <div className="flex justify-center space-x-6 text-xl mt-10">
-            <i className="fab fa-instagram" />
-            <i className="fab fa-facebook" />
-            <i className="fab fa-pinterest" />
-            <i className="fab fa-envelope" />
-          </div>
-
-          {/* Footer Nav */}
-          <div className="mt-6 text-sm bg-red-500 text-black space-x-6">
-            <a href="#" className="hover:text-yellow-600">
-              Home
-            </a>
-            <a href="#">About</a>
-            <a href="#">Client Results</a>
-            <a href="#">Work With Me</a>
-            <a href="#">Blog</a>
-            <a href="#">Contact</a>
-          </div>
-          <p className="text-xs text-gray-500">Member Login</p>
-        </div>
-      </section>
+      </section> */}
     </>
   );
 }
